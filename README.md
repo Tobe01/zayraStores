@@ -2,9 +2,6 @@
 
 Zayra Store is a React-based e-commerce storefront that lets users browse products, view product details, manage a cart, and complete a simple checkout flow (UI). The project focuses on clean component structure, reusable UI, predictable state updates, and a responsive layout.
 
-## Live Demo
-- **Demo:** _Add link_
-- **Figma/Design (optional):** _Add link_
 
 ## Features
 - Product listing and product details pages
