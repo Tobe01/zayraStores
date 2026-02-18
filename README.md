@@ -41,7 +41,8 @@ npm run dev
 Build for Production
 npm run build
 npm run preview
-Project Structure (example)
+
+# Project Structure
 src/
   components/      # reusable UI components
   pages/           # route-level pages (Home, Product, Cart, Checkout)
