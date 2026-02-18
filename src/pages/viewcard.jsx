@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { toast } from "react-toastify";
+import backShop from "../../public/images/icons/CLOSE-BLACK.svg";
 import {
   isInWishlist,
   subscribeToWishlistChanges,
@@ -101,7 +102,7 @@ export function ViewCard({
       <div className="viewSub">
         <div onClick={onClickAction} className="backToShop">
           <img
-            src="../../public/images/icons/CLOSE-BLACK.svg"
+            src={backShop}
             alt="arrowBack"
           />
         </div>
