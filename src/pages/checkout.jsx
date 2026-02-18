@@ -3,6 +3,7 @@ import { Header } from "../components/header";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { getCartItems, getCartQuantity, saveCartItems } from "../../data/cart";
+import arrowLeft from '../../public/images/icons/keyboard_arrow_left_24dp_8B1A10_FILL0_wght400_GRAD0_opsz24.svg';
 import "./items.css";
 import "./checkout.css";
 import "./shop.css";
@@ -99,7 +100,7 @@ export function Checkout() {
                   <Link to="/shop">
                     <div className="backToShop">
                       <span>
-                        <img src="../../public/images/icons/keyboard_arrow_left_24dp_8B1A10_FILL0_wght400_GRAD0_opsz24.svg" />
+                        <img src={arrowLeft} />
                       </span>
                       <p>Back to Shop</p>
                     </div>
