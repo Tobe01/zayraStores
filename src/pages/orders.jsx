@@ -3,6 +3,7 @@ import dayjs from "dayjs";
 import { Link } from "react-router-dom";
 import { OrdersHeader } from "../components/orders-header";
 import { clearCartItems, getCartItems, getCartQuantity } from "../../data/cart";
+import loadingSpiner from '../../public/images/icons/loading-spinner.gif';
 import "./orders.css";
 import "../media-queries/orders.css";
 import "../media-queries/orders-headers.css";
@@ -900,7 +901,7 @@ export function Orders() {
                   }}>
                   {spinner && (
                     <span>
-                      <img src="../../public/images/icons/loading-spinner.gif" alt="loading spinner" width={30} />
+                      <img src={loadingSpiner} alt="loading spinner" width={30} />
                     </span> 
                   )}
                   Proceed to Checkout
