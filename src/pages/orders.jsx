@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import { OrdersHeader } from "../components/orders-header";
 import { clearCartItems, getCartItems, getCartQuantity } from "../../data/cart";
 import loadingSpiner from '../../public/images/icons/loading-spinner.gif';
+import paymentSuccessfull from "../../public/images/icons/original-17b2b7b1f13e997e74325f1209a5894a.gif";
+import closePayment from "../../public/images/icons/CLOSE-BLACK.svg";
 import "./orders.css";
 import "../media-queries/orders.css";
 import "../media-queries/orders-headers.css";
@@ -527,7 +529,7 @@ export function Orders() {
                 >
                 {confirmSpinner && (
                   <span>
-                    <img src="../../public/images/icons/loading-spinner.gif" alt="loading spinner" width={30} />
+                  <img src={loadingSpiner} width={30} />
                   </span> 
                 )}
                 Make Payment
@@ -541,9 +543,9 @@ export function Orders() {
         <section className="successConfirmModal">
           <div className="successMain">
             <div className="successImageCont">
-              <img src="../../public/images/icons/original-17b2b7b1f13e997e74325f1209a5894a.gif"/>
+              <img src={paymentSuccessfull} />
               <div onClick={closePayment} className="closyy">
-               <img src="../../public/images/icons/CLOSE-BLACK.svg" alt="closeModal" width={30} />
+               <img src={closePayment} alt="closeModal" width={30} />
               </div>
               <div className="confidi">
                 <h1>Payment Complete</h1>
