@@ -1,0 +1,642 @@
+body {
+  position: relative;
+}
+
+.viewItemContainer {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.viewItemContainer p {
+  margin: 0;
+}
+
+.viewSub {
+  background-color: white;
+  padding-top: 5px;
+  max-width: 800px;
+  min-width: 800px;
+  position: fixed;
+  top: 20px;
+  border-radius: 5px;
+  margin-top: 5%;
+}
+
+.viewSub a {
+  text-decoration: none;
+  color: black;
+}
+
+.backToShop {
+  margin: 2px auto 5px 8px;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
+
+.backToShop:hover {
+  background-color: rgb(236, 226, 226);
+  border-radius: 50%;
+}
+
+.backToShop p,
+img {
+  margin: 0;
+  cursor: pointer;
+}
+
+.backToShop p:hover {
+  color: rgb(185, 177, 177);
+}
+
+.backToShop img {
+  /* width: 30px; */
+  object-fit: cover;
+  margin: 0;
+}
+
+.viewCards {
+  display: flex;
+  padding: 0 10px 10px 10px;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  max-height: fit-content;
+  gap: 10px;
+}
+
+.imgContainer {
+  height: 450px;
+  width: 50%;
+  border-radius: 7px;
+  position: relative;
+}
+
+.arrowDiv {
+  position: absolute;
+  top: 77%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.arrowDiv button {
+  position: relative;
+  border: none;
+  border-radius: 50%;
+  padding: 20px;
+  cursor: pointer;
+  background-color: white;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.arrowDiv button:hover {
+  background-color: rgb(228, 218, 218);
+}
+
+.arrowDiv button:active {
+  background-color: rgb(131, 126, 126);
+}
+
+.arrowDiv button img {
+  position: absolute;
+  top: 0;
+  left: 5px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.imgContainer img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 7px;
+  cursor: auto;
+  transition: transform 1.5s ease-in;
+}
+
+.imgContainer img:hover {
+  transform: scale(1.01);
+}
+
+.itemsCont {
+  max-width: 45%;
+  padding: 0 20px;
+}
+
+.itemDetail {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.itemDetail div h1 {
+  font-size: 16px;
+  white-space: normal;
+}
+
+.itemDetail div:nth-child(2) {
+  display: flex;
+  font-size: 14px;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.itemDetail div:nth-child(2) span {
+  font-weight: 400;
+  margin-left: 5px;
+  color: green;
+}
+
+.itemDetail img {
+  width: 15px;
+}
+
+
+.itemDetail div:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* From Uiverse.io by SalladShooter */
+.like-wrapper {
+  --gap: 0.5em;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  --dot-bg: white;
+  --dot-color: white;
+  --dot-size: 1px;
+  --dot-space: 22px;
+  background: linear-gradient(90deg,
+      var(--dot-bg) calc(var(--dot-space) - var(--dot-size)),
+      transparent 1%) center / var(--dot-space) var(--dot-space),
+    linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)),
+      transparent 1%) center / var(--dot-space) var(--dot-space),
+    var(--dot-color);
+  border: none;
+  padding: 5px;
+  border-radius: 50%;
+  box-shadow: 0 0 1em 0.5em rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.check[type="checkbox"] {
+  display: none;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin: 1.5px 0 0 1px;
+}
+
+.icon {
+  width: 1.5em;
+  height: 1.5em;
+  /* fill: black; */
+  fill: rgb(214, 208, 208);
+  transition: opacity 0.3s ease-in-out;
+}
+
+.icon.active {
+  display: none;
+  fill: #f52121;
+}
+
+.check[type="checkbox"]:checked+.container .icon.active {
+  display: inline-block;
+  animation: wiggle 0.5s ease-in-out;
+}
+
+.check[type="checkbox"]:checked+.container .icon.inactive {
+  display: none;
+}
+
+.like-text {
+  margin-left: 0.5em;
+  padding: 0.5em;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-weight: bolder;
+}
+
+@keyframes wiggle {
+
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(-10deg);
+  }
+
+  50% {
+    transform: rotate(10deg);
+  }
+
+  75% {
+    transform: rotate(-10deg);
+  }
+}
+
+.itemCategory {
+  margin: 0;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.itemCategory p,
+h4 {
+  margin: 0;
+}
+
+.itemCategory h4 {
+  margin: 5px 0;
+  font-weight: 400;
+}
+
+.itemOrder {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.itemPrice {
+  margin: 0;
+  margin-top: 20px;
+  color: green;
+}
+
+h1 {
+  font-size: 2.0rem;
+  font-weight: 700;
+}
+
+.itemPrice p,
+h1 {
+  margin: 0;
+}
+
+.itemPrice p {
+  margin-bottom: 5px;
+  color: black;
+  font-weight: bold;
+}
+
+.itemDescription {
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+.itemDescription h1 {
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.addQuantity {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-weight: bold;
+  margin-top: 25px;
+}
+
+.addQuantitySub {
+  display: flex;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+.addQuantitySub div {
+  cursor: pointer;
+  padding: 3px 6px;
+}
+
+.addQuantitySub div:first-child {
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.addQuantitySub div:nth-child(3) {
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.addQuantitySub div:hover {
+  background-color: rgb(194, 186, 186);
+}
+
+.addQuantitySub span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 30px;
+  border: none;
+  font-weight: bold;
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.addQuantitySub input:focus {
+  border: none;
+  outline: none;
+}
+
+.addItem {
+  width: 100%;
+  border: none;
+  padding: 13px 0;
+  color: white;
+  font-size: 18px;
+  background-color: rgb(53, 51, 51);
+  border-radius: 5px;
+  cursor: pointer;
+  /* margin-top: 34px; */
+}
+
+.addItem:hover {
+  background-color: rgb(105, 99, 99);
+}
+
+
+.shop-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  padding: 200px 0 20px 0;
+}
+
+.shop-container-sub {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.trend {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin: 0;
+}
+
+.trend h1 {
+  margin: 0;
+  font-size: clamp(18px, 3vw, 40px);
+  letter-spacing: 5px;
+}
+
+.trend h3 {
+  margin: 0;
+  font-weight: 100;
+  font-size: clamp(16px, 3vw, 25px);
+  margin-top: 15px;
+}
+
+.trend1 {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.trendItem {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.trend1 button,
+.trendItem button {
+  white-space: nowrap;
+  padding: 12px 27px;
+  border: 1px solid rgb(192, 187, 187);
+  border-radius: 3px;
+  font-size: clamp(18px, 2vw, 18px);
+  cursor: pointer;
+}
+
+.trend1 button:first-child {
+  padding: 12px 50px;
+}
+
+/* Styles for item container and Item cards */
+
+.main-shopItems {
+  padding: 0 10px;
+}
+
+/* Items container starts */
+
+.item-container {
+  background-color: white;
+  margin: 40px 0;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: 10px;
+  row-gap: 30px;
+}
+
+.mensItem-container{
+  background-color: white;
+  margin-top: -40px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: 10px;
+  row-gap: 30px;
+}
+
+.kidsItem-container{
+  background-color: white;
+  margin-top: 0;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: 10px;
+  row-gap: 30px;
+}
+
+.womensItem-container{
+  background-color: white;
+  margin-top: 0;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: 10px;
+  row-gap: 30px;
+}
+
+.mens-container {
+  background-color: white;
+  margin: 40px 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 10px;
+  row-gap: 30px;
+  visibility: hidden;
+  display: none;
+}
+
+.kids-container {
+  background-color: white;
+  margin: 40px 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 10px;
+  row-gap: 30px;
+  visibility: hidden;
+  display: none;
+}
+
+.womens-container {
+  background-color: white;
+  margin: 40px 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 10px;
+  row-gap: 30px;
+  visibility: hidden;
+  display: none;
+}
+
+/* Items container ends here */
+
+.item-container a {
+  text-decoration: none;
+  color: black;
+}
+
+.card-item-container {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  cursor: pointer;
+  border: 1px solid rgb(250, 241, 241);
+}
+
+.topImg-container {
+  width: 100%;
+  height: 250px;
+  position: relative;
+}
+
+.topImg-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Itemu {
+  display: flex;
+  flex-direction: column;
+}
+
+.HoverDiv {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 13px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  color: white;
+  transition: transform 0.5s ease-in;
+  height: 100%;
+}
+
+.HoverDiv:hover {
+  transform: scale(1.01);
+}
+
+.HoverDiv img {
+  max-width: 10%;
+  height: auto;
+}
+
+.topImg-container img:nth-child(2),
+img:nth-child(3) {
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+  transition: transform 1.5s ease-in;
+}
+
+.topImg-container img:hover {
+  transform: scale(1.01);
+}
+
+.bottomItem-container {
+  height: fit-content;
+  margin: 0;
+  padding: 5px 0 10px 10px;
+}
+
+.bottomItem-top h1 {
+  font-size: clamp(14px, 2vw, 17px);
+  margin: 0;
+}
+
+.bottomItem-top h3 {
+  margin: 0;
+  font-weight: 300;
+  font-size: clamp(14px, 2vw, 16px);
+  margin-top: 10px;
+}
+
+.bottomItem-container p {
+  font-weight: bold;
+  margin: 0;
+  font-size: clamp(14px, 2vw, 15px);
+  margin-top: 11px;
+  letter-spacing: 2px;
+  color: green;
+}
+
+.colors-container {
+  display: flex;
+  gap: 5px;
+  width: fit-content;
+  /* margin: 10px 0; */
+}
+
+.colors-container button {
+  border: 1px solid rgb(231, 222, 222);
+  width: 25px;
+  padding: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.colors-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}

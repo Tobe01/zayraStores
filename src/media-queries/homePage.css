@@ -1,0 +1,407 @@
+/* iphone 11 and iphone 12 screens */
+@media(max-width: 414px) {
+  .home-container {
+    padding: 165px 10px 10px 10px;
+  }
+
+  .first-banner-container {
+    margin: auto;
+    height: 130px;
+    width: 95%;
+  }
+
+  .first-banner-container img {
+    object-fit: contain;
+    width: 100%;
+  }
+
+  .threeCards-container {
+    margin: 0;
+    grid-template-columns: 1fr;
+    gap: 17px;
+  }
+
+  .women,
+  .kids,
+  .men {
+    width: 95%;
+    height: 100%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .threeCardsLabel {
+    font-size: clamp(30px, 2vw, 30px);
+  }
+
+  .second-banner-container {
+    margin: auto;
+    height: 90px;
+    padding: 0;
+    width: 95%;
+  }
+
+  .second-banner-container img {
+    object-fit: contain;
+    width: 100%;
+  }
+
+  .fourSquare {
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0;
+  }
+
+  .fourCards-container {
+    margin: 0 0 15px 0;
+    grid-template-columns: 1fr;
+    row-gap: 17px;
+    width: 95%;
+    padding: 0;
+  }
+
+  .exclusives {
+    font-size: clamp(25px, 2vw, 16px);
+  }
+
+  .fourCards-details {
+    white-space: wrap;
+    margin: 10px 0 0 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .six-main {
+    margin: 20px 0;
+    padding: 10px 10px 45px 10px;
+  }
+
+  .sixCards-container {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 44px;
+  }
+
+  .sixCards-details p {
+    font-size: clamp(25px, 2vw, 25px);
+    margin-bottom: 10px;
+  }
+
+  .dress div {
+    font-size: clamp(20px, 2vw, 16px);
+    margin-top: 7px;
+  }
+
+  .banner-container3 {
+    margin: auto;
+    width: 95%;
+    height: 140px;
+  }
+
+  .threeEach-container {
+    padding: 20px 10px;
+    margin-bottom: 10px;
+  }
+
+  .threeEach-details {
+    margin: 0 0 10px 0;
+  }
+
+  .threeEach-details p {
+    font-size: clamp(25px, 2vw, 25px);
+  }
+
+  .threeEach {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .action-container {
+    grid-template-columns: 1fr;
+    row-gap: 17px;
+  }
+
+  .purchase-container,
+  .refer-container {
+    font-size: clamp(15px, 2vw, 18px);
+    white-space: nowrap;
+    padding: 20px 5px;
+  }
+
+  .topsellers-container p {
+    font-size: clamp(20px, 2vw, 25px);
+    margin: 0;
+    margin: 10px 0;
+  }
+
+  .topsellers-down p {
+    font-size: clamp(20px, 2vw, 25px);
+    margin: 0;
+    padding: 0;
+  }
+
+  .eightCards-container {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0;
+  }
+
+  .eight-cards-img-container p {
+    font-size: clamp(17px, 2vw, 19px);
+  }
+
+  .topsellCont {
+    padding: 10px;
+    margin: 0;
+  }
+
+  .brandsContainer {
+    padding: 10px;
+    margin: 15px 0;
+    justify-content: center;
+    width: 95%;
+  }
+
+  .brandsDescription {
+    font-size: clamp(22px, 2vw, 25px);
+  }
+
+  .brandsDescription p {
+    margin: 8px 0;
+  }
+
+  .brandsCards {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0;
+  }
+
+  .brandsButton {
+    margin-top: 8px;
+  }
+
+  .brandsButton button {
+    font-size: clamp(20px, 2vw, 18px);
+  }
+
+}
+
+/* Small–medium phones (iphone 14Promax) */
+@media (min-width: 420px) and (max-width: 500px) {
+  .home-container {
+    padding: 165px 10px 10px 10px;
+  }
+
+  .first-banner-container {
+    margin: auto;
+    height: 130px;
+    width: 95%;
+  }
+
+  .first-banner-container img {
+    object-fit: contain;
+    width: 100%;
+  }
+
+  .threeCards-container {
+    margin: 0;
+    grid-template-columns: 1fr;
+    gap: 17px;
+  }
+
+  .women,
+  .kids,
+  .men {
+    width: 95%;
+    height: 100%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .threeCardsLabel {
+    font-size: clamp(30px, 2vw, 30px);
+  }
+
+  .second-banner-container {
+    margin: auto;
+    height: 90px;
+    padding: 0;
+    width: 95%;
+  }
+
+  .second-banner-container img {
+    object-fit: contain;
+    width: 100%;
+  }
+
+  .fourSquare {
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0;
+  }
+
+  .fourCards-container {
+    margin: 0 0 15px 0;
+    grid-template-columns: 1fr;
+    row-gap: 17px;
+    width: 95%;
+    padding: 0;
+  }
+
+  .exclusives {
+    font-size: clamp(25px, 2vw, 16px);
+  }
+
+  .fourCards-details {
+    white-space: wrap;
+    margin: 10px 0 0 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .six-main {
+    margin: 20px 0;
+    padding: 10px 10px 45px 10px;
+  }
+
+  .sixCards-container {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 44px;
+  }
+
+  .sixCards-details p {
+    font-size: clamp(25px, 2vw, 25px);
+    margin-bottom: 10px;
+  }
+
+  .dress div {
+    font-size: clamp(20px, 2vw, 16px);
+    margin-top: 7px;
+  }
+
+  .banner-container3 {
+    margin: auto;
+    width: 95%;
+    height: 140px;
+  }
+
+  .threeEach-container {
+    padding: 20px 10px;
+    margin-bottom: 10px;
+  }
+
+  .threeEach-details {
+    margin: 0 0 10px 0;
+  }
+
+  .threeEach-details p {
+    font-size: clamp(25px, 2vw, 25px);
+  }
+
+  .threeEach {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .action-container {
+    grid-template-columns: 1fr;
+    row-gap: 17px;
+  }
+
+  .purchase-container,
+  .refer-container {
+    font-size: clamp(15px, 2vw, 18px);
+    white-space: nowrap;
+    padding: 20px 5px;
+  }
+
+  .topsellers-container p {
+    font-size: clamp(20px, 2vw, 25px);
+    margin: 0;
+    margin: 10px 0;
+  }
+
+  .topsellers-down p {
+    font-size: clamp(20px, 2vw, 25px);
+    margin: 0;
+    padding: 0;
+  }
+
+  .eightCards-container {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0;
+  }
+
+  .eight-cards-img-container p {
+    font-size: clamp(22px, 2vw, 19px);
+  }
+
+  .topsellCont {
+    padding: 10px;
+    margin: 0;
+  }
+
+  .brandsContainer {
+    padding: 10px;
+    margin: 15px 0;
+    justify-content: center;
+    width: 95%;
+  }
+
+  .brandsDescription {
+    font-size: clamp(22px, 2vw, 25px);
+  }
+
+  .brandsDescription p {
+    margin: 8px 0;
+  }
+
+  .brandsCards {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0;
+  }
+
+  .brandsButton {
+    margin-top: 8px;
+  }
+
+  .brandsButton button {
+    font-size: clamp(20px, 2vw, 18px);
+  }
+}
+
+/* small laptop - tabs */
+@media(min-width: 501px) and (max-width: 1024px) {
+  .threeCards-container {
+    margin: 20px 0;
+    grid-template-columns: 1fr 1fr;
+    gap: 17px;
+  }
+
+  .fourCards-container {
+    grid-template-columns: 1fr 1fr;
+    margin-top: 0;
+    row-gap: 17px;
+  }
+
+  .sixCards-container {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 44px;
+  }
+
+  .threeEach {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .eightCards-container {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0;
+  }
+
+  .brandsCards {
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0;
+  }
+
+}

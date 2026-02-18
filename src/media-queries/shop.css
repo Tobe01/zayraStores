@@ -1,0 +1,295 @@
+/* iphone 11 and iphone 12 screens */
+@media(max-width: 414px) {
+  .topImg-container {
+    height: 58%;
+  }
+
+  .item-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .bottomItem-container {
+    padding: 7px 10px 10px 10px;
+  }
+
+  .HoverDiv {
+    height: 102.5%;
+  }
+
+  .shop-container {
+    padding: 180px 0 20px 0;
+  }
+
+  .shop-container-sub {
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 0 10px;
+  }
+
+  .trend {
+    margin-right: auto;
+  }
+
+  .trend h3 {
+    margin-top: 6px;
+  }
+
+  .trend1 {
+    justify-content: center;
+    gap: 5px;
+    padding: 0 10px;
+  }
+
+
+  .trend1 button,
+  .trendItem button {
+    font-size: 14.4px;
+    padding: 10px 12px;
+  }
+
+  .trend1 button:first-child {
+    font-size: 14.5px;
+    padding: 10px 13px;
+  }
+
+  .viewSub {
+    max-width: 380px;
+    min-width: 380px;
+    padding: 0;
+    margin-top: 0;
+  }
+
+  .viewCards {
+    flex-direction: column;
+  }
+
+  .imgContainer {
+    width: 98%;
+    height: 320px;
+  }
+
+  .itemsCont {
+    max-width: 98%;
+    padding: 5px 0;
+  }
+
+  .categoryContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .Itemu {
+    flex-direction: row;
+  }
+
+  .itemOrder {
+    visibility: hidden;
+    display: none;
+  }
+
+  .itemPrice {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: auto;
+  }
+
+  .itemPrice h1 {
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .itemPrice p {
+    margin: 0;
+    padding: 0;
+  }
+
+  .addItem {
+    margin-top: 5px;
+  }
+
+  .imgContainer img {
+    object-fit: contain;
+  }
+
+
+}
+
+/* Small–medium phones (iphone 14Promax) */
+@media (min-width: 420px) and (max-width: 500px) {
+  .topImg-container {
+    height: 58%;
+  }
+
+  .item-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .bottomItem-container {
+    padding: 7px 10px 10px 10px;
+  }
+
+  .HoverDiv {
+    height: 102.5%;
+  }
+
+  .shop-container {
+    padding: 180px 0 20px 0;
+  }
+
+  .shop-container-sub {
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 0 10px;
+  }
+
+  .trend {
+    margin-right: auto;
+  }
+
+  .trend h3 {
+    margin-top: 6px;
+  }
+
+  .trend1 {
+    justify-content: center;
+    gap: 5px;
+    padding: 0 10px;
+  }
+
+
+  .trend1 button,
+  .trendItem button {
+    font-size: 16px;
+    padding: 10px 12px;
+  }
+
+  .trend1 button:first-child {
+    font-size: 16px;
+    padding: 10px 13px;
+  }
+
+  .viewSub {
+    max-width: 400px;
+    min-width: 400px;
+    padding: 5px 0;
+    margin-top: 20px;
+  }
+
+  .viewCards {
+    flex-direction: column;
+  }
+
+  .imgContainer {
+    width: 98%;
+    height: 320px;
+  }
+
+  .itemsCont {
+    max-width: 98%;
+    padding: 5px 0;
+  }
+
+  .categoryContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .Itemu {
+    flex-direction: row;
+  }
+
+  .itemOrder {
+    visibility: hidden;
+    display: none;
+  }
+
+  .itemPrice {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: auto;
+  }
+
+  .itemPrice h1 {
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .itemPrice p {
+    margin: 0;
+    padding: 0;
+  }
+
+  .imgContainer img {
+    object-fit: contain;
+  }
+
+  .addItem {
+    margin-top: 5px;
+  }
+
+
+}
+
+/* small laptop - tabs */
+@media(min-width: 501px) and (max-width: 1024px) {
+  .topImg-container {
+    height: 68%;
+  }
+
+  .item-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .bottomItem-container {
+    padding: 7px 10px 10px 10px;
+  }
+
+  .HoverDiv {
+    height: 102.5%;
+  }
+
+  .shop-container {
+    padding: 180px 0 20px 0;
+  }
+
+  .trend {
+    margin-right: auto;
+  }
+
+  .trend h3 {
+    margin-top: 6px;
+  }
+
+  .trend1 {
+    justify-content: center;
+    gap: 5px;
+    padding: 0 10px;
+  }
+
+
+  .trend1 button,
+  .trendItem button {
+    font-size: 14.4px;
+    padding: 10px 20px;
+  }
+
+  .trend1 button:first-child {
+    font-size: 14.5px;
+  }
+
+  .viewSub {
+    margin-top: 150px;
+  }
+}

@@ -1,0 +1,43 @@
+/* iphone 11 and iphone 12 screens */
+@media(max-width: 414px) {
+  button {
+    margin-top: 20px;
+    padding: 10px 40px;
+  }
+
+  .errorContainer {
+    white-space: nowrap;
+  }
+
+  .errorContainer div h1 {
+    font-size: 60px;
+  }
+
+  .errorContainer div p {
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* Small–medium phones (iphone 14Promax) */
+@media (min-width: 420px) and (max-width: 500px) {
+  button {
+    margin-top: 20px;
+    padding: 10px 40px;
+  }
+
+  .errorContainer {
+    white-space: nowrap;
+  }
+
+  .errorContainer div h1 {
+    font-size: 60px;
+  }
+
+  .errorContainer div p {
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+  }
+}

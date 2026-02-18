@@ -1,0 +1,178 @@
+/* From Uiverse.io by JulanDeAlb */
+.hamburger {
+      cursor: pointer;
+      margin-right: auto;
+}
+
+.hamburger input {
+      display: none;
+}
+
+.hamburger svg {
+      /* The size of the SVG defines the overall size */
+      height: 3em;
+      width: clamp(30px, 3vw, 400px);
+      /* Define the transition for transforming the SVG */
+      transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line {
+      fill: none;
+      stroke: white;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-width: 3;
+      /* Define the transition for transforming the Stroke */
+      transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+            stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line-top-bottom {
+      stroke-dasharray: 12 63;
+}
+
+.mobile-nav-left {
+      display: flex;
+      padding-left: 20px;
+      flex: 1;
+      max-width: 185px;
+      align-items: center;
+      justify-content: space-evenly;
+}
+
+.mobile-nav-left h1 {
+      font-size: clamp(18px, 2vw, 20px);
+      color: white;
+}
+
+.mobile-right {
+      margin-right: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex: 1;
+      max-width: 120px;
+}
+
+.mobile-right img {
+      width: clamp(23px, 3vw, 50px);
+}
+
+.mobile-right img:hover {
+      cursor: pointer;
+}
+
+.mobile-searchbar-main {
+      display: flex;
+      flex: 1;
+      align-items: center;
+      height: clamp(40px, 1vw, 30px);
+}
+
+.mobile-search-bar {
+      display: flex;
+      flex: 1;
+      align-items: center;
+      justify-content: space-around;
+      height: 100%;
+      padding: 0 10px;
+}
+
+.mobile-search-bar img {
+      width: clamp(27px, 2vw, 50px);
+}
+
+.mobile-input {
+      display: flex;
+      flex: 1;
+      border: none;
+      padding: 13px 0;
+}
+
+.mobile-input::placeholder {
+      font-size: clamp(16px, 2vw, 18px);
+      color: rgb(212, 210, 210);
+}
+
+.mobile-input:focus {
+      outline: none;
+}
+
+.centralSearch {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: clamp(57px, 2vw, 50px);
+      visibility: hidden;
+}
+
+.centralSearch-container {
+      display: flex;
+      flex: 1;
+      align-items: center;
+      justify-content: space-around;
+      margin: 0 20px;
+      height: 75%;
+      max-width: 1330px;
+}
+
+.inputField {
+      display: flex;
+      flex: 1;
+      height: 100%;
+}
+
+.CentralSearch-input {
+      display: flex;
+      flex: 1;
+      border: none;
+      height: 100%;
+      max-width: 1170px;
+      padding: 10px;
+      border-top-left-radius: 1px;
+      border-bottom-left-radius: 1px;
+}
+
+.CentralSearch-input:focus {
+      outline: none;
+}
+
+.CentralSearch-input::placeholder {
+      font-size: 16.5px;
+      color: rgb(190, 186, 186);
+}
+
+.centralSearchButton {
+      margin-right: 20px;
+      border: none;
+      height: 100%;
+      padding-top: 5px;
+      background-color: grey;
+      cursor: pointer;
+      width: clamp(45px, 2vw, 50px);
+      border-top-right-radius: 1px;
+      border-bottom-right-radius: 1px;
+}
+
+.centralSearchButton:hover {
+      background-color: rgb(182, 178, 178);
+      transition: ease-in 10ms;
+}
+
+.centralSearchButton img {
+      width: clamp(27px, 2vw, 50px);
+}
+
+.centralSearchButton2 {
+      border: none;
+      background-color: black;
+      color: white;
+      font-size: clamp(15px, 2vw, 18px);
+      font-weight: 500;
+      cursor: pointer;
+}

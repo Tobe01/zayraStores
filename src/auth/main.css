@@ -1,0 +1,479 @@
+/* Always reserve space for scrollbar */
+html {
+  overflow-y: scroll;
+}
+
+/* Prevent horizontal overflow */
+body {
+  overflow: hidden;
+  width: 100%;
+  /* margin-top: 170px; */
+  position: relative;
+}
+
+/* Keep images within bounds */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.banner-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+  height: 280px;
+}
+
+.banner-container img {
+  object-fit: cover;
+  object-position: 20% 10%;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transition: transform 1s ease-in;
+}
+
+.banner-container img:hover,
+.banner-container3 img:hover {
+  transform: scale(1.03);
+}
+
+.banner-container3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+  height: 280px;
+}
+
+.banner-container3 img {
+  object-fit: cover;
+  object-position: middle;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transition: transform 1s ease-in;
+}
+
+.threeCards-container {
+  margin: 40px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 17px;
+  width: 100%;
+  height: 100%;
+}
+
+.threeCards-container a,
+.fourCards-container a {
+  text-decoration: none;
+}
+
+
+.women,
+.kids,
+.men {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+}
+
+.women img,
+.kids img,
+.men img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: box-shadow 0.5s ease;
+}
+
+.women img:hover,
+.kids img:hover,
+.men img:hover {
+  box-shadow: 0px 4px 6px 2px rgba(121, 117, 117);
+}
+
+.threeCardsLabel {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-left: clamp(5px, 2vw, 10px);
+  padding-right: clamp(5px, 2vw, 10px);
+  padding-top: clamp(5px, 2vw, 3px);
+  padding-bottom: clamp(5px, 2vw, 3px);
+  color: white;
+  border-radius: 3px;
+  font-size: clamp(18px, 2vw, 30px);
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.threeCardsLabel p {
+  margin: 0;
+}
+
+.second-banner-container,
+.first-banner-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+  height: 200px;
+}
+
+.second-banner-container img,
+.first-banner-container img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transition: transform 1s ease-in;
+}
+
+.second-banner-container img:hover,
+.first-banner-container img:hover {
+  transform: scale(1.03);
+}
+
+.fourSquare {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-shrink: 1;
+  padding-top: 25px;
+}
+
+.fourCards-details {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  margin-top: 55px;
+}
+
+.fourCards-details p {
+  font-size: clamp(14px, 2vw, 17px);
+}
+
+.fourCards-container {
+  margin: 40px 0 0 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 17px;
+  width: 100%;
+}
+
+.fourCards-first {
+  height: 100%;
+  position: relative;
+}
+
+.cards-img-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.exclusives {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(14px, 2vw, 16px);
+  font-weight: bold;
+  white-space: nowrap;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.exclusives p {
+  margin: 0;
+}
+
+.sub-ex {
+  margin-bottom: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-left: clamp(5px, 2vw, 10px);
+  padding-right: clamp(5px, 2vw, 10px);
+  padding-top: clamp(5px, 2vw, 3px);
+  padding-bottom: clamp(5px, 2vw, 3px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(4px, 2vw, 3px);
+  border-radius: 5px;
+}
+
+.sub-ex span {
+  font-size: 13px;
+}
+
+.cards-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.six-main {
+  margin: 60px 0 80px 0;
+}
+
+.sixCards-details p {
+  font-size: clamp(16px, 2vw, 25px);
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.sixCards-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  width: 100%;
+  column-gap: 15px;
+}
+
+.sixCards-container a {
+  text-decoration: none;
+  color: rgb(37, 37, 37);
+  font-weight: bold;
+}
+
+.dress {
+  width: 100%;
+  height: 100%;
+}
+
+.dress img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: box-shadow 0.5s ease;
+}
+
+.dress img:hover {
+  box-shadow: 0px 4px 6px 2px rgba(121, 117, 117);
+}
+
+.dress div {
+  margin-top: 10px;
+}
+
+.threeEach-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.threeEach-details {
+  margin: 50px 0 18px 0;
+}
+
+.threeEach-details p,
+.topsellers-container p,
+.topsellers-down p {
+  font-size: clamp(18px, 2vw, 25px);
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+
+.threeEach {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  column-gap: 15px;
+  padding-bottom: 50px;
+  row-gap: 50px;
+  margin-bottom: 30px;
+  height: 100%;
+}
+
+.contents-div {
+  margin-top: -20px;
+  padding-top: 10px;
+  margin: 0;
+}
+
+.contents-div p,
+.contents-div h3 {
+  margin: 0;
+}
+
+.contents-div h3 {
+  margin-bottom: 10px;
+}
+
+.threeEach a {
+  text-decoration: none;
+  color: rgb(37, 37, 37);
+}
+
+.card {
+  width: 100%;
+  height: 630px;
+  padding-bottom: -10px;
+}
+
+.card img {
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+}
+
+.action-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 17px;
+}
+
+.action-container a {
+  cursor: pointer;
+}
+
+.purchase-container,
+.refer-container {
+  background-color: rgb(34, 33, 33);
+  padding: 20px 0;
+  font-size: clamp(13px, 2vw, 18px);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.eightCards-container {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 17px;
+  row-gap: 20px;
+}
+
+.eightCards-container a {
+  text-decoration: none;
+  color: black;
+}
+
+.eight-cards-img-container {
+  height: 320px;
+  padding-bottom: 35px;
+  cursor: pointer;
+}
+
+.eight-cards-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  box-shadow: none;
+  transition: box-shadow 0.5s ease;
+}
+
+.eight-cards-img-container img:hover {
+  box-shadow: 0px 4px 6px 2px rgba(121, 117, 117);
+}
+
+.eight-cards-img-container p {
+  font-size: clamp(14px, 2vw, 19px);
+  font-weight: bold;
+  margin: 0;
+  margin-top: 6px;
+}
+
+.topsellers-down {
+  margin-top: 40px;
+}
+
+.brandsContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.brandsDescription {
+  font-size: clamp(16px, 2vw, 25px);
+  font-weight: bold;
+}
+
+.brandsDescription p {
+  margin: 15px 0 23px 0
+}
+
+.brandsCards {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  place-items: center;
+  row-gap: 17px;
+  column-gap: 17px;
+  margin: 0;
+}
+
+.brandsCards-container {
+  margin: 0;
+  background-color: rgb(253, 243, 243);
+}
+
+.brandsImg1 {
+  width: 100%;
+  object-fit: cover;
+  visibility: visible;
+  display: inline;
+  transition: box-shadow 0.03s ease-in;
+}
+
+.brandsImg1:hover {
+  box-shadow: 0 6px 4px rgba(0, 0, 0, 0.08);
+}
+
+.brandsImg2 {
+  width: 100%;
+  object-fit: cover;
+  visibility: hidden;
+  display: none;
+  transition: transform 0.3s ease-in;
+}
+
+.brandsImg2:hover {
+  transform: scale(1.01);
+}
+
+.brandsButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.brandsButton button {
+  border: 1px solid black;
+  background-color: transparent;
+  padding: 20px 40px;
+  color: black;
+  font-size: clamp(16px, 2vw, 18px);
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.brandsButton button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}

@@ -1,0 +1,18 @@
+.interval-sub-container {
+  background-color: rgb(230, 224, 224);
+  height: clamp(30px, 3vw, 40px);
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.interval-sub-container a {
+  font-size: clamp(9px, 3vw, 13px);
+  color: rgb(34, 34, 34);
+  cursor: pointer;
+}
+
+.interval-sub-container a:hover {
+  color: rgb(144, 144, 247);
+}

@@ -1,0 +1,332 @@
+/* iphone 11 and iphone 12 screens */
+@media(max-width: 414px) {
+  .footer-container {
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin: 0;
+    padding: 15px 0;
+  }
+
+  .newsletter-container {
+    width: 100%;
+    align-items: center;
+  }
+
+  .buttonContainer input {
+    max-width: 230px;
+    height: 95%;
+    margin-right: 5px;
+  }
+
+  .buttonContainer {
+    margin-bottom: 0;
+    justify-content: center;
+  }
+
+  .submit-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 10px;
+    padding: 0 35px;
+    height: 97%;
+    margin-left: 0;
+  }
+
+  .type-btn {
+    height: 97%;
+  }
+
+  .footerSearches-container {
+    padding: 10px;
+  }
+
+  .topSearches {
+    font-size: clamp(18px, 2vw, 15px);
+  }
+
+  .topSearches h3 {
+    margin: 8px 0 15px 0;
+    padding: 0;
+  }
+
+  .stayInTouch h3 {
+    font-size: 18px;
+    margin: 8px 0;
+    padding: 0;
+  }
+
+  .helpSupport p,
+  .zayra-sub p,
+  .followUs p {
+    font-size: 13px;
+    margin: 8px 0;
+    padding: 0;
+    white-space: nowrap;
+  }
+
+  .footerBottom {
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    padding: 20px 0;
+    gap: 10px;
+  }
+
+  .brandSignature {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .brandSignature p {
+    font-size: clamp(13px, 2vw, 25px);
+    white-space: nowrap;
+  }
+
+
+  .brandOwnership {
+    width: 100%;
+  }
+
+  .brandOwnership p {
+    padding: 0;
+    font-size: clamp(15px, 2vw, 13px);
+    margin: 0;
+  }
+
+  .brandOwnership span {
+    font-size: 15;
+  }
+
+  .brandOwnership h2 {
+    margin: 0;
+    padding: 0;
+    display: none;
+    visibility: hidden;
+  }
+
+  .brandLogo {
+    width: 250px;
+    height: 50px;
+  }
+
+}
+
+/* Small–medium phones (iphone 14Promax) */
+@media (min-width: 420px) and (max-width: 500px) {
+  .footer-container {
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin: 0;
+    padding: 15px 0;
+  }
+
+  .newsletter-container {
+    width: 100%;
+    align-items: center;
+  }
+
+  .buttonContainer input {
+    max-width: 230px;
+    height: 95%;
+    margin-right: 5px;
+  }
+
+  .buttonContainer {
+    margin-bottom: 0;
+    justify-content: center;
+  }
+
+  .submit-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 10px;
+    padding: 0 35px;
+    height: 97%;
+    margin-left: 0;
+  }
+
+  .type-btn {
+    height: 97%;
+  }
+
+  .footerSearches-container {
+    padding: 10px;
+  }
+
+  .topSearches {
+    font-size: clamp(18px, 2vw, 15px);
+  }
+
+  .topSearches h3 {
+    margin: 8px 0 15px 0;
+    padding: 0;
+  }
+
+  .stayInTouch h3 {
+    font-size: 18px;
+    margin: 8px 0;
+    padding: 0;
+  }
+
+  .helpSupport p,
+  .zayra-sub p,
+  .followUs p {
+    font-size: 13px;
+    margin: 8px 0;
+    padding: 0;
+    white-space: nowrap;
+  }
+
+  .footerBottom {
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    padding: 20px 0;
+    gap: 10px;
+  }
+
+  .brandSignature {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .brandSignature p {
+    font-size: clamp(13px, 2vw, 25px);
+    white-space: nowrap;
+  }
+
+
+  .brandOwnership {
+    width: 100%;
+  }
+
+  .brandOwnership p {
+    padding: 0;
+    font-size: clamp(15px, 2vw, 13px);
+    margin: 0;
+  }
+
+  .brandOwnership span {
+    font-size: 15;
+  }
+
+  .brandOwnership h2 {
+    margin: 0;
+    padding: 0;
+    display: none;
+    visibility: hidden;
+  }
+
+  .brandLogo {
+    width: 250px;
+    height: 50px;
+  }
+}
+
+/* small laptop - tabs */
+@media(min-width: 501px) and (max-width: 1024px) {
+  .newsletter-container {
+    width: 100%;
+    align-items: center;
+    padding-top: 8px;
+  }
+
+  .buttonContainer input {
+    max-width: 230px;
+    height: 95%;
+    margin-right: 5px;
+  }
+
+  .buttonContainer {
+    margin-bottom: 0;
+    justify-content: center;
+  }
+
+  .submit-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 10px;
+    padding: 0 35px;
+    height: 97%;
+    margin-left: 0;
+  }
+
+  .type-btn {
+    height: 97%;
+  }
+
+  .footerSearches-container {
+    padding: 10px;
+  }
+
+  .topSearches {
+    font-size: clamp(18px, 2vw, 15px);
+  }
+
+  .topSearches h3 {
+    margin: 8px 0 15px 0;
+    padding: 0;
+  }
+
+  .stayInTouch h3 {
+    font-size: 18px;
+    margin: 8px 0;
+    padding: 0;
+  }
+
+  .helpSupport p,
+  .zayra-sub p,
+  .followUs p {
+    font-size: 13px;
+    margin: 8px 0;
+    padding: 0;
+    white-space: nowrap;
+  }
+
+  .footerBottom {
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    padding: 20px 0;
+    gap: 10px;
+  }
+
+  .brandSignature {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .brandSignature p {
+    font-size: clamp(13px, 2vw, 25px);
+    white-space: nowrap;
+  }
+
+  .brandOwnership {
+    width: 100%;
+  }
+
+  .brandOwnership p {
+    padding: 0;
+    font-size: clamp(15px, 2vw, 13px);
+    margin: 0;
+  }
+
+  .brandOwnership span {
+    font-size: 15;
+  }
+
+  .brandOwnership h2 {
+    margin: 0;
+    padding: 0;
+    display: none;
+    visibility: hidden;
+  }
+
+  .brandLogo {
+    width: 250px;
+    height: 50px;
+  }
+}

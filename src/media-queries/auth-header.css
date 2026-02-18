@@ -1,0 +1,32 @@
+/* iphone 11 and iphone 12 screens */
+@media(max-width: 414px) {
+  .logingNav-main {
+    padding: 0 12px;
+    font-size: 12px;
+  }
+
+  .logingNavIcon img {
+    width: 85px;
+  }
+
+  .logingNav-main button {
+    margin-bottom: 16px;
+  }
+
+}
+
+/* Small–medium phones (iphone 14Promax) */
+@media (min-width: 420px) and (max-width: 500px) {
+  .logingNav-main {
+    padding: 0 12px;
+    font-size: 12px;
+  }
+
+  .logingNavIcon img {
+    width: 87px;
+  }
+
+  .logingNav-main button {
+    margin-bottom: 16px;
+  }
+}

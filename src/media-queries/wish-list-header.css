@@ -1,0 +1,29 @@
+/* iphone 11 and iphone 12 screens */
+@media(max-width: 414px) {
+  .WishesSub {
+    padding: 5px 15px;
+  }
+
+  .Wishesleft img {
+    width: 100px;
+  }
+
+  .wishesButton button {
+    margin-bottom: 11px;
+  }
+}
+
+/* Small–medium phones (iphone 14Promax) */
+@media (min-width: 420px) and (max-width: 500px) {
+  .WishesSub {
+    padding: 5px 15px;
+  }
+
+  .Wishesleft img {
+    width: 100px;
+  }
+
+  .wishesButton button {
+    margin-bottom: 11px;
+  }
+}

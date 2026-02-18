@@ -1,0 +1,21 @@
+/* iphone 11 and iphone 12 screens */
+@media(max-width: 414px) {
+  .wishlist-container {
+    margin: 20px 0 0 0;
+  }
+
+  .wishU {
+    padding: 10px;
+  }
+}
+
+/* Small–medium phones (iphone 14Promax) */
+@media (min-width: 420px) and (max-width: 500px) {
+  .wishlist-container {
+    margin: 20px 0 0 0;
+  }
+
+  .wishU {
+    padding: 10px;
+  }
+}
