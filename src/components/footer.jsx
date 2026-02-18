@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link } from "react-router-dom";
+import { toast } from 'react-toastify';
 import "../media-queries/footer.css";
 import "./footer.css";
 
@@ -155,7 +156,9 @@ export function Footer() {
                 <input
                   onKeyDown={(event)=>{
                     if(event.key === "Enter"){
-                      alert(`${newsLetter} successfully signed up`);
+                      toast.info(`${newsLetter} successfully signed up`, {
+                        position: 'top-center'
+                      });
                       setNewsLetter('');
                     }
                   }}
@@ -166,7 +169,9 @@ export function Footer() {
                 />
                 <button
                   onClick={()=>{
-                    alert(`${newsLetter} successfully signed up`);
+                    toast.info(`${newsLetter} successfully signed up`, {
+                      position: 'top-center'
+                    });
                     setNewsLetter('');
                   }} 
                   className="submit-btn">SUBMIT</button>

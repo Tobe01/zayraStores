@@ -369,6 +369,10 @@ img {
   flex: 1;
 }
 
+.action-container a{
+  color: white;
+}
+
 .eightCards-container {
   margin-top: 15px;
   display: grid;

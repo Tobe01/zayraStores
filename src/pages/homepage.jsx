@@ -245,13 +245,17 @@ export function HomePage(){
                     </div>
 
                     <div className="action-container">
-                      <div className="purchase-container">
-                        <a>NEW HERE? %10 OFF YOUR FIRST PURCHASE</a>
-                      </div>
+                      <Link to="/shop">
+                        <div className="purchase-container">
+                            NEW HERE? %10 OFF YOUR FIRST PURCHASE
+                        </div>
+                      </Link>
 
-                      <div className="refer-container">
-                        <a>GET ₦5k CREDIT WHEN YOU REFER A FRIEND</a>
-                      </div>
+                      <Link to="/shop">
+                        <div className="refer-container">
+                           GET ₦5k CREDIT WHEN YOU REFER A FRIEND
+                        </div>
+                      </Link>
                     </div>
                 </div>
 
@@ -329,73 +333,73 @@ export function HomePage(){
                   </div>
 
                   <div className="brandsCards">
-                    <Link to="#">
+                    <Link to="/shop">
                         <div className="brandsCards-container">
                           <img className="brandsImg1" src="images/brands/Fashion Brand Art Design Logo-Photoroom.png" alt="brand" loading="lazy" />
                         </div>
                     </Link>  
 
-                    <Link to="#">
+                    <Link to="/shop">
                         <div className="brandsCards-container">
                           <img className="brandsImg1" src="images/brands/Beige Minimalist brand fashion logo-Photoroom.png" alt="brand" loading="lazy" />
                         </div>
                     </Link>  
 
-                    <Link to="#">
+                    <Link to="/shop">
                         <div className="brandsCards-container">
                           <img className="brandsImg1" src="images/brands/Black & White Minimalist Business Logo-Photoroom.png" alt="brand" loading="lazy" />
                         </div>
                     </Link>   
 
-                    <Link to="#">
+                    <Link to="/shop">
                         <div className="brandsCards-container">
                           <img className="brandsImg1" src="images/brands/Black & White Modern Professional Fashion Clothing Brand Logo-Photoroom.png" alt="brand" loading="lazy" />
                         </div>
                     </Link>   
 
-                    <Link to="#">
+                    <Link to="/shop">
                         <div className="brandsCards-container">
                           <img className="brandsImg1" src="images/brands/Black minimalis brand fashion logo-Photoroom.png" alt="brand" loading="lazy" />
                         </div>
                     </Link>  
 
-                    <Link to="#">
+                    <Link to="/shop">
                         <div className="brandsCards-container">
                           <img className="brandsImg1" src="images/brands/Black Minimalist Fashion Brand Logo-Photoroom.png" alt="brand" loading="lazy" />
                         </div>
                     </Link> 
 
-                    <Link to="#">
+                    <Link to="/shop">
                         <div className="brandsCards-container">
                           <img className="brandsImg1" src="images/brands/Black White Minimal Modern Simple Bold Business Mag Logo-Photoroom.png" alt="brand" loading="lazy" />
                         </div>
                     </Link>  
 
-                    <Link to="#">
+                    <Link to="/shop">
                         <div className="brandsCards-container">
                           <img className="brandsImg1" src="images/brands/Black White Minimalist Professional Initial Logo-Photoroom.png" alt="brand" loading="lazy" />
                         </div>
                     </Link>   
 
-                    <Link to="#">
+                    <Link to="/shop">
                         <div className="brandsCards-container">
                           <img className="brandsImg1" src="images/brands/Black White Minimalist Simple Monogram Typography Logo-Photoroom.png" alt="brand" loading="lazy" />
                         </div>
                     </Link>   
 
-                    <Link to="#">
+                    <Link to="/shop">
                         <div className="brandsCards-container">
                           <img className="brandsImg1" src="images/brands/Initial Brand Fashion Logo-Photoroom.png" alt="brand" loading="lazy" />
                         </div>
                     </Link>   
 
-                    <Link to="#">
+                    <Link to="/shop">
                         <div className="brandsCards-container">
                           <img className="brandsImg1" src="images/brands/Cream Black Typography Loop Brand Logo-Photoroom.png" alt="brand" loading="lazy" />
                         </div>
                     </Link>   
                     
-                    <Link to="#">
+                    <Link to="/shop">
                         <div className="brandsCards-container">
                           <img className="brandsImg1" src="images/brands/Minimalist typography brand Fashion Logo-Photoroom.png" alt="brand" loading="lazy" />
                         </div>

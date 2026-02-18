@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { activateHamburger, closeWindow } from "./drop-menu/dropdown";
+import closeBurger from "../../public/images/icons/CLOSE-BLACK.svg";
 import { useState, useEffect } from "react";
+import { toast } from "react-toastify";
 import {
   getWishlistQuantity,
   subscribeToWishlistChanges,
@@ -80,7 +82,9 @@ export function Header({ updateQuantity }) {
 
   function renderSearchParam(event){
     if(event.key === "Enter"){
-      alert(`${searchParam} not yet available in store`);
+      toast.info(`${searchParam} not yet available in store`, {
+        position: 'top-center'
+      });
       setSearchParam('');
     }
   }
@@ -201,7 +205,9 @@ export function Header({ updateQuantity }) {
           <div className="mobile-searchbar-main">
             <div className="mobile-search-bar">
               <div onClick={()=>{
-                alert(`${searchParam} not yet available in store`);
+                toast.info(`${searchParam} not yet available in store`, {
+                  position: 'top-center'
+                });
               }} className="first-button">
                 <img
                   src="images/icons/search_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
@@ -233,7 +239,7 @@ export function Header({ updateQuantity }) {
 
                 <span className="closeWin" onClick={closeWindow}>
                   <img
-                    src="images/icons/close_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"
+                    src={closeBurger}
                     alt="closeIcon"
                   />
                 </span>
@@ -570,7 +576,9 @@ export function Header({ updateQuantity }) {
                 placeholder="Search for products, brands, or categories"
               />
               <button onClick={()=>{
-                alert(`${searchParam} not yet available in store`)
+                toast.info(`${searchParam} not yet available in store`, {
+                  position: 'top-center'
+                })
               }} className="search-button">
                 <img
                   src="images/icons/search_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"

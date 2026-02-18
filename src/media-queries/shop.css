@@ -4,7 +4,10 @@
     height: 58%;
   }
 
-  .item-container {
+  .item-container,
+  .mensItem-container,
+  .kidsItem-container,
+  .womensItem-container {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -13,7 +16,7 @@
   }
 
   .HoverDiv {
-    height: 102.5%;
+    height: 100%;
   }
 
   .shop-container {
@@ -126,7 +129,10 @@
     height: 58%;
   }
 
-  .item-container {
+  .item-container,
+  .mensItem-container,
+  .kidsItem-container,
+  .womensItem-container {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -135,7 +141,7 @@
   }
 
   .HoverDiv {
-    height: 102.5%;
+    height: 100%;
   }
 
   .shop-container {
@@ -248,7 +254,10 @@
     height: 68%;
   }
 
-  .item-container {
+  .item-container,
+  .mensItem-container,
+  .kidsItem-container,
+  .womensItem-container {
     grid-template-columns: repeat(3, 1fr);
   }
 
@@ -257,7 +266,7 @@
   }
 
   .HoverDiv {
-    height: 102.5%;
+    height: 100%;
   }
 
   .shop-container {
