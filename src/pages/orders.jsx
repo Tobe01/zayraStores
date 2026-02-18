@@ -5,7 +5,7 @@ import { OrdersHeader } from "../components/orders-header";
 import { clearCartItems, getCartItems, getCartQuantity } from "../../data/cart";
 import loadingSpiner from '../../public/images/icons/loading-spinner.gif';
 import paymentSuccessfull from "../../public/images/icons/original-17b2b7b1f13e997e74325f1209a5894a.gif";
-import closePayment from "../../public/images/icons/CLOSE-BLACK.svg";
+import closePay from "../../public/images/icons/CLOSE-BLACK.svg";
 import "./orders.css";
 import "../media-queries/orders.css";
 import "../media-queries/orders-headers.css";
@@ -545,7 +545,7 @@ export function Orders() {
             <div className="successImageCont">
               <img src={paymentSuccessfull} />
               <div onClick={closePayment} className="closyy">
-               <img src={closePayment} alt="closeModal" width={30} />
+               <img src={closePay} alt="closeModal" width={30} />
               </div>
               <div className="confidi">
                 <h1>Payment Complete</h1>
