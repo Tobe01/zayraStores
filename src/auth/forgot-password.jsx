@@ -2,11 +2,10 @@ import { Link } from "react-router-dom";
 import { AuthHeader } from "../components/auth-header";
 import { useEffect } from "react";
 import "./forgot-password.css";
-import '../media-queries/forgot-password.css';
+import "../media-queries/forgot-password.css";
 
 export function ForgotPassword() {
-  
-  useEffect(()=>{
+  useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 

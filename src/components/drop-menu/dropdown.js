@@ -1,17 +1,17 @@
-export function activateHamburger(){
+export function activateHamburger() {
   const hamburger = document.querySelector('.hamburger');
   const hamburgerContainer = document.querySelector('.HamburgerContainer');
-  
-  hamburger.addEventListener('click', ()=>{
+
+  hamburger.addEventListener('click', () => {
     hamburgerContainer.classList.add('active');
   });
 };
 
-export function closeWindow(){
-   const closeWindow = document.querySelector('.closeWin');
-   const hamburgerContainer = document.querySelector('.HamburgerContainer');
+export function closeWindow() {
+  const closeWindow = document.querySelector('.closeWin');
+  const hamburgerContainer = document.querySelector('.HamburgerContainer');
 
-   closeWindow.addEventListener('click', ()=>{
+  closeWindow.addEventListener('click', () => {
     hamburgerContainer.classList.remove('active');
   });
 };

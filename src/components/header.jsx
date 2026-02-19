@@ -76,77 +76,77 @@ export function Header({ updateQuantity }) {
     }
   }
 
-  function getSearchParam(event){
+  function getSearchParam(event) {
     setSearchParam(event.target.value);
   }
 
-  function renderSearchParam(event){
-    if(event.key === "Enter"){
+  function renderSearchParam(event) {
+    if (event.key === "Enter") {
       toast.info(`${searchParam} not yet available in store`, {
-        position: 'top-center'
+        position: "top-center",
       });
-      setSearchParam('');
+      setSearchParam("");
     }
   }
 
-  function showNew(){
-    if(newin === false){
+  function showNew() {
+    if (newin === false) {
       setNewIn(true);
     } else {
       setNewIn(false);
     }
   }
-  function showNew1(){
-    if(newin1 === false){
+  function showNew1() {
+    if (newin1 === false) {
       setNewIn1(true);
     } else {
       setNewIn1(false);
     }
   }
-  function showNew2(){
-    if(newin2 === false){
+  function showNew2() {
+    if (newin2 === false) {
       setNewIn2(true);
     } else {
       setNewIn2(false);
     }
   }
-  function showNew3(){
-    if(newin3 === false){
+  function showNew3() {
+    if (newin3 === false) {
       setNewIn3(true);
     } else {
       setNewIn3(false);
     }
   }
-  function showNew4(){
-    if(newin4 === false){
+  function showNew4() {
+    if (newin4 === false) {
       setNewIn4(true);
     } else {
       setNewIn4(false);
     }
   }
-  function showNew5(){
-    if(newin5 === false){
+  function showNew5() {
+    if (newin5 === false) {
       setNewIn5(true);
     } else {
       setNewIn5(false);
     }
   }
-  function showNew6(){
-    if(newin6 === false){
+  function showNew6() {
+    if (newin6 === false) {
       setNewIn6(true);
     } else {
       setNewIn6(false);
     }
   }
-  function showNew7(){
-    if(newin7 === false){
+  function showNew7() {
+    if (newin7 === false) {
       setNewIn7(true);
     } else {
       setNewIn7(false);
     }
   }
-  function showNew8(){
-    if(newin8 === false){
+  function showNew8() {
+    if (newin8 === false) {
       setNewIn8(true);
     } else {
       setNewIn8(false);
@@ -204,11 +204,14 @@ export function Header({ updateQuantity }) {
 
           <div className="mobile-searchbar-main">
             <div className="mobile-search-bar">
-              <div onClick={()=>{
-                toast.info(`${searchParam} not yet available in store`, {
-                  position: 'top-center'
-                });
-              }} className="first-button">
+              <div
+                onClick={() => {
+                  toast.info(`${searchParam} not yet available in store`, {
+                    position: "top-center",
+                  });
+                }}
+                className="first-button"
+              >
                 <img
                   src="images/icons/search_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
                   alt="search icon"
@@ -238,10 +241,7 @@ export function Header({ updateQuantity }) {
                 </Link>
 
                 <span className="closeWin" onClick={closeWindow}>
-                  <img
-                    src={closeBurger}
-                    alt="closeIcon"
-                  />
+                  <img src={closeBurger} alt="closeIcon" />
                 </span>
               </div>
               <div className="directoriesContainer">
@@ -500,58 +500,94 @@ export function Header({ updateQuantity }) {
 
         <div className="bottom-nav">
           <div className="bottom-sub">
-            <div onClick={()=>{
-              showSubHover();
-              showNew();
-              }} style={{backgroundColor:  newin ? 'grey' : 'black'}} className="NewHover">
+            <div
+              onClick={() => {
+                showSubHover();
+                showNew();
+              }}
+              style={{ backgroundColor: newin ? "grey" : "black" }}
+              className="NewHover"
+            >
               <p>NEW IN</p>
             </div>
-            <div onClick={()=>{
-              showSubHover();
-              showNew1();
-              }} style={{backgroundColor:  newin1 ? 'grey' : 'black'}} className="NewHover">
+            <div
+              onClick={() => {
+                showSubHover();
+                showNew1();
+              }}
+              style={{ backgroundColor: newin1 ? "grey" : "black" }}
+              className="NewHover"
+            >
               <p>CLOTHING</p>
             </div>
-            <div onClick={()=>{
-              showSubHover();
-              showNew2();
-              }} style={{backgroundColor:  newin2 ? 'grey' : 'black'}} className="NewHover">
+            <div
+              onClick={() => {
+                showSubHover();
+                showNew2();
+              }}
+              style={{ backgroundColor: newin2 ? "grey" : "black" }}
+              className="NewHover"
+            >
               <p>SHOES</p>
             </div>
-            <div onClick={()=>{
-              showSubHover();
-              showNew3();
-              }} style={{backgroundColor:  newin3 ? 'grey' : 'black'}} className="NewHover">
+            <div
+              onClick={() => {
+                showSubHover();
+                showNew3();
+              }}
+              style={{ backgroundColor: newin3 ? "grey" : "black" }}
+              className="NewHover"
+            >
               <p>ACCESSORIES</p>
             </div>
-            <div onClick={()=>{
-              showSubHover();
-              showNew4();
-              }} style={{backgroundColor:  newin4 ? 'grey' : 'black'}} className="NewHover">
+            <div
+              onClick={() => {
+                showSubHover();
+                showNew4();
+              }}
+              style={{ backgroundColor: newin4 ? "grey" : "black" }}
+              className="NewHover"
+            >
               <p>SPORT</p>
             </div>
-            <div onClick={()=>{
-              showSubHover();
-              showNew5();
-              }} style={{backgroundColor:  newin5 ? 'grey' : 'black'}} className="NewHover">
+            <div
+              onClick={() => {
+                showSubHover();
+                showNew5();
+              }}
+              style={{ backgroundColor: newin5 ? "grey" : "black" }}
+              className="NewHover"
+            >
               <p>BRANDS</p>
             </div>
-            <div onClick={()=>{
-              showSubHover();
-              showNew6();
-              }} style={{backgroundColor:  newin6 ? 'grey' : 'black'}} className="NewHover">
+            <div
+              onClick={() => {
+                showSubHover();
+                showNew6();
+              }}
+              style={{ backgroundColor: newin6 ? "grey" : "black" }}
+              className="NewHover"
+            >
               <p>DESIGNER</p>
             </div>
-            <div onClick={()=>{
-              showSubHover();
-              showNew7();
-              }} style={{backgroundColor:  newin7 ? 'grey' : 'black'}} className="NewHover">
+            <div
+              onClick={() => {
+                showSubHover();
+                showNew7();
+              }}
+              style={{ backgroundColor: newin7 ? "grey" : "black" }}
+              className="NewHover"
+            >
               <p>RE-ZAYRA</p>
             </div>
-            <div onClick={()=>{
-              showSubHover();
-              showNew8();
-              }} style={{backgroundColor:  newin8 ? 'grey' : 'black'}} className="NewHover">
+            <div
+              onClick={() => {
+                showSubHover();
+                showNew8();
+              }}
+              style={{ backgroundColor: newin8 ? "grey" : "black" }}
+              className="NewHover"
+            >
               <p>SALE</p>
             </div>
           </div>
@@ -575,11 +611,14 @@ export function Header({ updateQuantity }) {
                 type="search"
                 placeholder="Search for products, brands, or categories"
               />
-              <button onClick={()=>{
-                toast.info(`${searchParam} not yet available in store`, {
-                  position: 'top-center'
-                })
-              }} className="search-button">
+              <button
+                onClick={() => {
+                  toast.info(`${searchParam} not yet available in store`, {
+                    position: "top-center",
+                  });
+                }}
+                className="search-button"
+              >
                 <img
                   src="images/icons/search_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
                   alt="searchIcon"

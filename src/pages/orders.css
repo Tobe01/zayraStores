@@ -191,7 +191,7 @@ button {
   visibility: visible;
 }
 
-.formField span{
+.formField span {
   color: red;
 }
 
@@ -333,11 +333,11 @@ button {
   cursor: pointer;
 }
 
-.purchase--btn img{
+.purchase--btn img {
   margin-bottom: 2px;
 }
 
-.submitOrder button img{
+.submitOrder button img {
   width: 24px;
 }
 
@@ -454,19 +454,7 @@ button {
 
 /* Confirm pay modal */
 
-.mainConfirmPayModal{
- background-color: rgba(0, 0, 0, 0.5);
-  position: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 999;
-}
-.successConfirmModal{
+.mainConfirmPayModal {
   background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
   display: flex;
@@ -479,89 +467,103 @@ button {
   z-index: 999;
 }
 
-.confirmPayment-modal{
- background-color: white;
- width: 420px;
- height: 460px;
- padding: 25px;
- display: flex;
- flex-direction: column;
- gap: 20px;
- border-radius: 5px;
+.successConfirmModal {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
 }
 
-.confirmDescriptions h2, p{
+.confirmPayment-modal {
+  background-color: white;
+  width: 420px;
+  height: 460px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 5px;
+}
+
+.confirmDescriptions h2,
+p {
   margin: 0;
   padding: 0;
 }
 
-.confirmDescriptions p{
+.confirmDescriptions p {
   padding-top: 5px;
   font-style: italic;
 }
 
-.mainDetailsContainer{
- background-color: rgb(241, 239, 239);
- font-size: 15px;
- padding: 15px;
- height: 60%;
- margin-top: 10px;
- border-radius: 5px;
+.mainDetailsContainer {
+  background-color: rgb(241, 239, 239);
+  font-size: 15px;
+  padding: 15px;
+  height: 60%;
+  margin-top: 10px;
+  border-radius: 5px;
 }
 
-.mainDetailsContainer h1{
+.mainDetailsContainer h1 {
   margin: 0;
   padding: 0;
   font-size: 17px;
   font-weight: 500;
 }
 
-.detailsContainer{
- display: flex;
- margin-top: 15px;
- justify-content: space-between;
- height: 200px;
- border-bottom: 1px solid rgb(216, 215, 215);
+.detailsContainer {
+  display: flex;
+  margin-top: 15px;
+  justify-content: space-between;
+  height: 200px;
+  border-bottom: 1px solid rgb(216, 215, 215);
 }
 
-.description{
- width: 100%;
- padding-top: 10px
+.description {
+  width: 100%;
+  padding-top: 10px
 }
 
-.description div, 
-.response div{
+.description div,
+.response div {
   margin-bottom: 13px;
 }
 
-.response{
- padding-top: 10px;
- text-align: end;
- width: 100%;
+.response {
+  padding-top: 10px;
+  text-align: end;
+  width: 100%;
 }
 
-.detailsAmount{
- padding-top: 10px;
- font-weight: bold;
- font-size: 17px;
- display: flex;
- align-items: center;
- color: green;
- justify-content: space-between;
+.detailsAmount {
+  padding-top: 10px;
+  font-weight: bold;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  color: green;
+  justify-content: space-between;
 }
 
-.detailsAmount div:first-child{
- color: black;
+.detailsAmount div:first-child {
+  color: black;
 }
 
-.confirmEdit{
- display: flex;
- align-items: center;
- justify-content: space-between;
- gap: 10px;
+.confirmEdit {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
 }
 
-.confirmEdit button{
+.confirmEdit button {
   background-color: green;
   color: white;
   font-size: 16px;
@@ -574,91 +576,91 @@ button {
   cursor: pointer;
 }
 
-.confirmEdit button:nth-child(2):hover{
+.confirmEdit button:nth-child(2):hover {
   background-color: rgb(3, 104, 3);
 }
 
-.confirmEdit button:first-child{
+.confirmEdit button:first-child {
   background-color: white;
   color: black;
   border: 1px solid grey;
 }
 
-.confirmEdit button:first-child:hover{
+.confirmEdit button:first-child:hover {
   background-color: beige;
 }
 
-.successMain{
- background-color: white;
- width: 340px;
- height: 520px;
- display: flex;
- flex-direction: column;
- padding: 0 20px 15px 20px;
- border-radius: 7px;
+.successMain {
+  background-color: white;
+  width: 340px;
+  height: 520px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px 15px 20px;
+  border-radius: 7px;
 }
 
-.successImageCont{
- display: flex;
- text-align: center;
- flex-direction: column;
- align-items: center;
- justify-content: center;
- width: 100%;
+.successImageCont {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
-.successImageCont img:first-child{
+.successImageCont img:first-child {
   position: relative;
   width: 100%;
 }
 
-.closyy{
+.closyy {
   position: absolute;
   margin-left: 320px;
   margin-bottom: 200px;
 }
 
-.confidi{
+.confidi {
   position: absolute;
   top: 255px;
   width: 340px;
   color: rgb(102, 101, 101);
 }
 
-.spannn{
- display: flex;
- font-size: 11.5px;
+.spannn {
+  display: flex;
+  font-size: 11.5px;
 }
 
-.spannn span{
- font-weight: bold;
+.spannn span {
+  font-weight: bold;
 }
 
-.confidi h1{
- font-size: 28px;
- color: black;
+.confidi h1 {
+  font-size: 28px;
+  color: black;
 }
 
-.orderCredentials{
- display: flex;
- flex-direction: column;
- text-align: center;
- margin-top: 40px;
+.orderCredentials {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 40px;
 }
 
-.orderCredentials h1{
- margin: 0;
- font-weight: 450;
+.orderCredentials h1 {
+  margin: 0;
+  font-weight: 450;
 }
 
-.credentialsDetails{
- display: flex;
- flex-direction: column;
- margin-top: 20px;
- gap: 10px;
+.credentialsDetails {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  gap: 10px;
 }
 
-.credenSub{
+.credenSub {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -666,14 +668,14 @@ button {
   font-size: 13px;
 }
 
-.credenSub div{
+.credenSub div {
   width: 180px;
   justify-content: flex-start;
   text-align: start;
   color: rgb(177, 176, 176);
 }
 
-.credenSub div:first-child{
+.credenSub div:first-child {
   width: 100px;
   justify-content: flex-start;
   text-align: start;
@@ -681,11 +683,11 @@ button {
   color: black;
 }
 
-.orderCredentials button{
- border: none;
- background-color: green;
- color: white;
- width: 100%;
- padding: 13px 0;
- font-size: 19px;
+.orderCredentials button {
+  border: none;
+  background-color: green;
+  color: white;
+  width: 100%;
+  padding: 13px 0;
+  font-size: 19px;
 }

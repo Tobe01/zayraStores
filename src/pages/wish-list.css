@@ -1,5 +1,5 @@
 .wishU {
-  background-color: rgb(245, 239, 239); 
+  background-color: rgb(245, 239, 239);
   padding: 100px 0 0 0;
   position: relative;
 }
@@ -61,7 +61,7 @@
   height: 100vh;
 }
 
-.emptyWishes div{
+.emptyWishes div {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -115,7 +115,7 @@ p {
   gap: 10px;
 }
 
-.wishCont{
+.wishCont {
   border-radius: 5px;
   width: 500px;
 }
@@ -170,7 +170,7 @@ p {
   white-space: wrap;
 }
 
-.priceDesc h1{
+.priceDesc h1 {
   font-size: 18px;
   font-weight: 450;
   white-space: wrap;

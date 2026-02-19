@@ -2,66 +2,66 @@
 @media(max-width: 414px) {
 
   .wishU {
-  padding: 70px 0 0 0;
-}
+    padding: 70px 0 0 0;
+  }
 
   .wishCard {
 
-  width: fit-content;
-}
+    width: fit-content;
+  }
 
-.wishlist-container {
-  padding: 20px 0 40px 5px;
-}
+  .wishlist-container {
+    padding: 20px 0 40px 5px;
+  }
 
   .imageDesc {
-  width: fit-content;
-}
+    width: fit-content;
+  }
 
-.imageContainer {
-  width: 80px;
-}
+  .imageContainer {
+    width: 80px;
+  }
 
-.priceDesc {
-  min-width: 212px;
-  max-width: 223px;
-}
+  .priceDesc {
+    min-width: 212px;
+    max-width: 223px;
+  }
 
-.priceDesc h1{
-  font-size: 17px;
-}
+  .priceDesc h1 {
+    font-size: 17px;
+  }
 
 
 }
 
 /* Small–medium phones (iphone 14Promax) */
 @media (min-width: 420px) and (max-width: 500px) {
-    .wishU {
-  padding: 70px 0 0 0;
-}
+  .wishU {
+    padding: 70px 0 0 0;
+  }
 
   .wishCard {
 
-  width: fit-content;
-}
+    width: fit-content;
+  }
 
-.wishlist-container {
-  padding: 20px 0 40px 10px;
-}
+  .wishlist-container {
+    padding: 20px 0 40px 10px;
+  }
 
   .imageDesc {
-  width: fit-content;
-}
+    width: fit-content;
+  }
 
-.imageContainer {
-  width: 80px;
-}
+  .imageContainer {
+    width: 80px;
+  }
 
-.priceDesc {
-  width: 250px;
-}
+  .priceDesc {
+    width: 250px;
+  }
 
-.priceDesc h1{
-  font-size: 17px;
-}
+  .priceDesc h1 {
+    font-size: 17px;
+  }
 }

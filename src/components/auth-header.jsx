@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "../auth/login.css";
 import "../auth/signup.css";
-import '../media-queries/auth-header.css';
+import "../media-queries/auth-header.css";
 
 export function AuthHeader() {
   return (

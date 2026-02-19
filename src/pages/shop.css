@@ -463,7 +463,7 @@ h1 {
   row-gap: 30px;
 }
 
-.mensItem-container{
+.mensItem-container {
   background-color: white;
   margin-top: -40px;
   display: grid;
@@ -472,7 +472,7 @@ h1 {
   row-gap: 30px;
 }
 
-.kidsItem-container{
+.kidsItem-container {
   background-color: white;
   margin-top: 0;
   display: grid;
@@ -481,7 +481,7 @@ h1 {
   row-gap: 30px;
 }
 
-.womensItem-container{
+.womensItem-container {
   background-color: white;
   margin-top: 0;
   display: grid;

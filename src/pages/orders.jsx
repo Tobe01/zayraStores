@@ -4,7 +4,7 @@ import dayjs from "dayjs";
 import { Link } from "react-router-dom";
 import { OrdersHeader } from "../components/orders-header";
 import { clearCartItems, getCartItems, getCartQuantity } from "../../data/cart";
-import loadingSpiner from '../../public/images/icons/loading-spinner.gif';
+import loadingSpiner from "../../public/images/icons/loading-spinner.gif";
 import paymentSuccessfull from "../../public/images/icons/original-17b2b7b1f13e997e74325f1209a5894a.gif";
 import closePay from "../../public/images/icons/CLOSE-BLACK.svg";
 import "./orders.css";
@@ -17,17 +17,19 @@ export function Orders() {
   const [contacts, setContacts] = useState(true);
   const [contactDetails, setContactDetails] = useState(false);
 
-  const [firstName, setFirstName] = useState('');
-  const [lastName, setLastName] = useState('');
-  const [country, setCountry] = useState('Select Country');
-  const [phone, setPhone] = useState('');
-  const [payMethod, setPayMethod] = useState('Select your prefered payment method');
-  const [houseAddress, setHouseAddress] = useState('');
-  const [city, setCity] = useState('');
-  const [emailAddress, setEmailAddress] = useState('');
-  const [cardNumber, setCardNumber] = useState('');
-  const [expiryDate, setExpiryDate] = useState('');
-  const [cvv, setCvv] = useState('');
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [country, setCountry] = useState("Select Country");
+  const [phone, setPhone] = useState("");
+  const [payMethod, setPayMethod] = useState(
+    "Select your prefered payment method",
+  );
+  const [houseAddress, setHouseAddress] = useState("");
+  const [city, setCity] = useState("");
+  const [emailAddress, setEmailAddress] = useState("");
+  const [cardNumber, setCardNumber] = useState("");
+  const [expiryDate, setExpiryDate] = useState("");
+  const [cvv, setCvv] = useState("");
   const [showCheckoutModal, setShowCheckoutModal] = useState(false);
   const [spinner, setSpinner] = useState(false);
   const [sendPay, setSendPay] = useState(false);
@@ -44,59 +46,58 @@ export function Orders() {
   const landMarkRef = useRef(null);
   const spinnerRef = useRef(null);
 
-
-  function enterfirstName(event){
-    if(event.key === "Enter"){
+  function enterfirstName(event) {
+    if (event.key === "Enter") {
       event.preventDefault();
       lastNameRef.current.focus();
-    } 
+    }
   }
 
-  function enterlastName(event){
-    if(event.key === "Enter"){
+  function enterlastName(event) {
+    if (event.key === "Enter") {
       event.preventDefault();
       countryRef.current.focus();
     }
   }
-  function enterCountry(event){
-    if(event.key === "Enter"){
+  function enterCountry(event) {
+    if (event.key === "Enter") {
       event.preventDefault();
       emailAddressRef.current.focus();
     }
   }
-  function enterEmail(event){
-    if(event.key === "Enter"){
+  function enterEmail(event) {
+    if (event.key === "Enter") {
       event.preventDefault();
       houseAddressRef.current.focus();
     }
   }
-  function enterAddress(event){
-    if(event.key === "Enter"){
+  function enterAddress(event) {
+    if (event.key === "Enter") {
       event.preventDefault();
       phoneRef.current.focus();
     }
   }
-  function enterPhone(event){
-    if(event.key === "Enter"){
+  function enterPhone(event) {
+    if (event.key === "Enter") {
       event.preventDefault();
       cityRef.current.focus();
     }
   }
-  function enterCity(event){
-    if(event.key === "Enter"){
+  function enterCity(event) {
+    if (event.key === "Enter") {
       event.preventDefault();
       landMarkRef.current.focus();
     }
   }
-  function enterLandmark(event){
-    if(event.key === "Enter"){
+  function enterLandmark(event) {
+    if (event.key === "Enter") {
       event.preventDefault();
       paymentMethodRef.current.focus();
     }
   }
 
-  function proceedCheckout(event){
-    if(event.target === "Enter"){
+  function proceedCheckout(event) {
+    if (event.target === "Enter") {
       event.preventDefault();
       spinnerRef.current.focus();
       showSpinner();
@@ -180,39 +181,39 @@ export function Orders() {
     }
   }
 
-   function showSpinner(){
-    if(firstName === ''
-       || lastName === '' 
-       || country === 'Select Country' 
-       || phone === '' 
-       || houseAddress === '' 
-       || city === '' 
-       || emailAddress === ''
-       || payMethod === 'Select your prefered payment method'
-      ){
+  function showSpinner() {
+    if (
+      firstName === "" ||
+      lastName === "" ||
+      country === "Select Country" ||
+      phone === "" ||
+      houseAddress === "" ||
+      city === "" ||
+      emailAddress === "" ||
+      payMethod === "Select your prefered payment method"
+    ) {
       toast.info("please fill up required fields to proceed");
     } else {
       setSpinner(true);
 
-      setTimeout(()=>{
-        if(contactDetails === false){
+      setTimeout(() => {
+        if (contactDetails === false) {
           setContactDetails(true);
           setSpinner(false);
         }
       }, 2000);
     }
-
   }
 
-  function makePayment(){
-    if(cardNumber === '' || expiryDate === '' || cvv === ''){
+  function makePayment() {
+    if (cardNumber === "" || expiryDate === "" || cvv === "") {
       toast.info("please fill up required fields to proceed");
     } else {
       setConfirmSpinner(true);
 
-      setTimeout(()=>{
-      if(sendPay === false){
-        setSendPay(true);
+      setTimeout(() => {
+        if (sendPay === false) {
+          setSendPay(true);
           setConfirmSpinner(false);
           setShowCheckoutModal(false);
         }
@@ -220,7 +221,7 @@ export function Orders() {
     }
   }
 
-  function closePayment(){
+  function closePayment() {
     setSendPay(false);
   }
 
@@ -240,19 +241,19 @@ export function Orders() {
     window.scrollTo(0, 0);
   }, []);
 
-  function getEmail(event){
+  function getEmail(event) {
     setEmailAddress(event.target.value);
   }
 
-  function getCardNumber(event){
+  function getCardNumber(event) {
     setCardNumber(event.target.value);
   }
 
-  function getExpiryDate(event){
+  function getExpiryDate(event) {
     setExpiryDate(event.target.value);
   }
 
-  function getCvv(event){
+  function getCvv(event) {
     setCvv(event.target.value);
   }
 
@@ -507,7 +508,7 @@ export function Orders() {
                       onChange={getExpiryDate}
                       value={expiryDate}
                       className="expiryDate"
-                      type="text"
+                      type="number"
                       name="expiry"
                       placeholder="01/23"
                     />
@@ -523,15 +524,17 @@ export function Orders() {
                 </div>
               </div>
 
-              <button className="purchase--btn" type="button"
-                onClick={()=>{
-                 makePayment();
-                }} 
-                >
+              <button
+                className="purchase--btn"
+                type="button"
+                onClick={() => {
+                  makePayment();
+                }}
+              >
                 {confirmSpinner && (
                   <span>
-                  <img src={loadingSpiner} width={30} />
-                  </span> 
+                    <img src={loadingSpiner} width={30} />
+                  </span>
                 )}
                 Make Payment
               </button>
@@ -545,17 +548,23 @@ export function Orders() {
           <div className="successMain">
             <div className="successImageCont">
               <img src={paymentSuccessfull} />
-              <div onClick={()=>{
-                closePayment();
-                handleContinueToShop();
-                }} 
-                className="closyy">
-               <img src={closePay} alt="closeModal" width={30} />
+              <div
+                onClick={() => {
+                  closePayment();
+                  handleContinueToShop();
+                }}
+                className="closyy"
+              >
+                <img src={closePay} alt="closeModal" width={30} />
               </div>
               <div className="confidi">
                 <h1>Payment Complete</h1>
                 <div className="spannn">
-                  <p><span>{firstName}</span> your payment has been completed successfully. A confrimation mail has been sent to <span>{emailAddress}</span></p>
+                  <p>
+                    <span>{firstName}</span> your payment has been completed
+                    successfully. A confrimation mail has been sent to{" "}
+                    <span>{emailAddress}</span>
+                  </p>
                 </div>
               </div>
             </div>
@@ -563,46 +572,28 @@ export function Orders() {
             <div className="orderCredentials">
               <h1>Order Details</h1>
               <div className="credentialsDetails">
+                <div className="credenSub">
+                  <div>ORDER REF</div>
+                  <div>{orderRef}</div>
+                </div>
 
-                  <div className="credenSub">
-                    <div>
-                      ORDER REF
-                    </div>
-                    <div>
-                      {orderRef}
-                    </div>
-                  </div>
+                <div className="credenSub">
+                  <div>ORDER DATE</div>
+                  <div>{successDate}</div>
+                </div>
 
-                  <div className="credenSub">
-                    <div>
-                      ORDER DATE
-                    </div>
-                    <div>
-                      {successDate}
-                    </div>
-                  </div>
+                <div className="credenSub">
+                  <div>PAYMENT TYPE</div>
+                  <div>{payMethod}</div>
+                </div>
 
-                  <div className="credenSub">
-                    <div>
-                      PAYMENT TYPE
-                    </div>
-                    <div>
-                      {payMethod}
-                    </div>
-                  </div>
-
-                  <div className="credenSub">
-                    <div>
-                      INVOICE NO
-                    </div>
-                    <div>
-                      {`N${refNumber}`}
-                    </div>
-                  </div>
-
+                <div className="credenSub">
+                  <div>INVOICE NO</div>
+                  <div>{`N${refNumber}`}</div>
+                </div>
               </div>
               <Link to="/shop">
-               <button onClick={handleContinueToShop}>Continue to Shop</button>
+                <button onClick={handleContinueToShop}>Continue to Shop</button>
               </Link>
             </div>
           </div>
@@ -652,7 +643,9 @@ export function Orders() {
                   <div className="contacts">
                     <p>Contact Details</p>
                     <div>
-                      <label>First Name <span>*</span></label>
+                      <label>
+                        First Name <span>*</span>
+                      </label>
                       <div>
                         <input
                           onKeyDown={enterfirstName}
@@ -669,7 +662,9 @@ export function Orders() {
                     </div>
 
                     <div>
-                      <label>Last Name <span>*</span></label>
+                      <label>
+                        Last Name <span>*</span>
+                      </label>
                       <div>
                         <input
                           onKeyDown={enterlastName}
@@ -686,7 +681,9 @@ export function Orders() {
                     </div>
 
                     <div>
-                      <label>Country <span>*</span></label>
+                      <label>
+                        Country <span>*</span>
+                      </label>
                       <select
                         onKeyDown={enterCountry}
                         ref={countryRef}
@@ -704,7 +701,9 @@ export function Orders() {
                     </div>
 
                     <div>
-                      <label>Email <span>*</span></label>
+                      <label>
+                        Email <span>*</span>
+                      </label>
                       <div>
                         <input
                           onKeyDown={enterEmail}
@@ -727,7 +726,9 @@ export function Orders() {
                     <p>Contact Address</p>
                     <div className="closeForm">
                       <div>
-                        <label>Delivery Address <span>*</span></label>
+                        <label>
+                          Delivery Address <span>*</span>
+                        </label>
                         <div>
                           <input
                             onKeyDown={enterAddress}
@@ -744,7 +745,9 @@ export function Orders() {
                       </div>
 
                       <div>
-                        <label>Phone Number <span>*</span></label>
+                        <label>
+                          Phone Number <span>*</span>
+                        </label>
                         <div>
                           <input
                             onKeyDown={enterPhone}
@@ -761,9 +764,11 @@ export function Orders() {
                       </div>
 
                       <div>
-                        <label>City <span>*</span></label>
+                        <label>
+                          City <span>*</span>
+                        </label>
                         <div>
-                          <input 
+                          <input
                             onKeyDown={enterCity}
                             ref={cityRef}
                             onChange={getCity}
@@ -901,15 +906,20 @@ export function Orders() {
 
               <div className="submitOrder">
                 <button
-                  onKeyDown={proceedCheckout} 
+                  onKeyDown={proceedCheckout}
                   ref={spinnerRef}
-                  onClick={()=>{
-                    showSpinner()
-                  }}>
+                  onClick={() => {
+                    showSpinner();
+                  }}
+                >
                   {spinner && (
                     <span>
-                      <img src={loadingSpiner} alt="loading spinner" width={30} />
-                    </span> 
+                      <img
+                        src={loadingSpiner}
+                        alt="loading spinner"
+                        width={30}
+                      />
+                    </span>
                   )}
                   Proceed to Checkout
                 </button>

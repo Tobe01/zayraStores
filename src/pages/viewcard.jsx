@@ -79,20 +79,20 @@ export function ViewCard({
   function increaseQuantity() {
     setQuantity((currentQuantity) => Math.min(currentQuantity + 1, 10));
 
-    if(quantity === 10){
+    if (quantity === 10) {
       toast.error("quantity can't be more than 10", {
-        position: 'bottom-right'
-      })
+        position: "bottom-right",
+      });
     }
   }
 
   function decreaseQuantity() {
     setQuantity((currentQuantity) => Math.max(currentQuantity - 1, 1));
 
-    if(quantity === 1){
+    if (quantity === 1) {
       toast.error("quantity can't be less than 1", {
-        position: 'bottom-right'
-      })
+        position: "bottom-right",
+      });
     }
   }
 
@@ -101,10 +101,7 @@ export function ViewCard({
       {/* Items rendered in Shop.js */}
       <div className="viewSub">
         <div onClick={onClickAction} className="backToShop">
-          <img
-            src={backShop}
-            alt="arrowBack"
-          />
+          <img src={backShop} alt="arrowBack" />
         </div>
 
         <div className="viewCards">

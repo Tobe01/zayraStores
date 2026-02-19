@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Header } from "../../components/header";
 import "./error-page.css";
-import '../../media-queries/error-page.css';
+import "../../media-queries/error-page.css";
 
 export function ErrorPage() {
   return (

@@ -44,7 +44,7 @@
   background-color: rgb(245, 239, 239);
 }
 
-.controlCart{
+.controlCart {
   background-color: rgb(230, 224, 224);
   padding: 5px;
   display: flex;
@@ -54,14 +54,14 @@
   border-radius: 5px;
 }
 
-.controlQuanContainer{
+.controlQuanContainer {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.emptyContainer{
- margin: auto;
+.emptyContainer {
+  margin: auto;
   padding-top: 50px;
   display: flex;
   flex-direction: column;
@@ -89,7 +89,7 @@
   font-weight: bold;
 }
 
-.backToShop{
+.backToShop {
   color: rgb(202, 16, 16);
   padding: 5px;
   cursor: pointer;
@@ -178,11 +178,11 @@
   background-color: rgb(202, 200, 200);
 }
 
-.deleteContainer button:hover{
+.deleteContainer button:hover {
   background-color: rgb(184, 182, 182);
 }
 
-.deleteContainer button:active{
+.deleteContainer button:active {
   background-color: rgb(202, 200, 200);
 }
 

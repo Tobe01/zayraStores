@@ -1,18 +1,18 @@
-import { toast } from 'react-toastify';
+import { toast } from "react-toastify";
 import { Header } from "../components/header";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { getCartItems, getCartQuantity, saveCartItems } from "../../data/cart";
-import arrowLeft from '../../public/images/icons/keyboard_arrow_left_24dp_8B1A10_FILL0_wght400_GRAD0_opsz24.svg';
+import arrowLeft from "../../public/images/icons/keyboard_arrow_left_24dp_8B1A10_FILL0_wght400_GRAD0_opsz24.svg";
 import "./items.css";
 import "./checkout.css";
 import "./shop.css";
 import "../media-queries/checkout.css";
 
 export function Checkout() {
-  const [ isAvailable, setIsAvailable ] = useState(false);
-  const [ unAvailable, setUnAvailable ] = useState(false);
-  const [ checkoutItems, setCheckoutItems ] = useState(() => getCartItems());
+  const [isAvailable, setIsAvailable] = useState(false);
+  const [unAvailable, setUnAvailable] = useState(false);
+  const [checkoutItems, setCheckoutItems] = useState(() => getCartItems());
   const cartCount = getCartQuantity(checkoutItems);
   const subtotalCents = checkoutItems.reduce(
     (total, item) =>
@@ -48,23 +48,27 @@ export function Checkout() {
     toast.info("Item removed from cart");
   }
 
-  function paymentNotAvailable(){
-    if(isAvailable === false){
-      setIsAvailable(toast.info("Payment Method Not available yet!", {
-       position: 'top-center'
-      }));
+  function paymentNotAvailable() {
+    if (isAvailable === false) {
+      setIsAvailable(
+        toast.info("Payment Method Not available yet!", {
+          position: "top-center",
+        }),
+      );
     }
   }
 
-  function paymentUnavailable(){
-    if(unAvailable === false){
-      setUnAvailable(toast.info("Payment Method Not available yet!", {
-        position: 'top-center'
-      }))
+  function paymentUnavailable() {
+    if (unAvailable === false) {
+      setUnAvailable(
+        toast.info("Payment Method Not available yet!", {
+          position: "top-center",
+        }),
+      );
     }
   }
 
-  useEffect(()=>{
+  useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
@@ -236,26 +240,23 @@ export function Checkout() {
                         src="images/payments/images.webp"
                         alt="paymentsLogo"
                       />
-                      <img 
+                      <img
                         src="images/payments/monnify.webp"
                         alt="paymentsLogo"
-                        />
-                      <img 
+                      />
+                      <img
                         src="images/payments/seampay.webp"
                         alt="paymentsLogo"
-                        />
-                      <img 
+                      />
+                      <img
                         src="images/payments/mastercard (1).webp"
                         alt="paymentsLogo"
-                        />
-                      <img 
+                      />
+                      <img
                         src="images/payments/verve.webp"
                         alt="paymentsLogo"
-                        />
-                      <img 
-                        src="images/payments/visa.webp"
-                        alt="paymentsLogo"
-                        />
+                      />
+                      <img src="images/payments/visa.webp" alt="paymentsLogo" />
                     </div>
                   </div>
                 </div>

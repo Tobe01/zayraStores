@@ -15,7 +15,7 @@ import "../media-queries/wish-list.css";
 export function WishList() {
   const [wishlistItems, setWishlistItems] = useState(() => getWishlistItems());
 
-  useEffect(()=>{
+  useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
@@ -49,28 +49,24 @@ export function WishList() {
   return (
     <>
       <title>Wishes</title>
-      
-      <WishHeader />{" "}
-
-      {/* <!-- Empty Cart Display --> */}
+      <WishHeader /> {/* <!-- Empty Cart Display --> */}
       {wishlistItems.length === 0 && (
         <section
           className="emptyWishes"
           style={{ visibility: "visible", display: "flex" }}
-        > 
-        <div>
-          <img
-            src="images/icons/personal_bag_question_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"
-            alt="emptyLuggage"
-          />
-          <p>You Have No wishlist Yet</p>
-          <Link to="/shop">
-            <button>BROWSE THE SHOP</button>
-          </Link>
-        </div>
+        >
+          <div>
+            <img
+              src="images/icons/personal_bag_question_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"
+              alt="emptyLuggage"
+            />
+            <p>You Have No wishlist Yet</p>
+            <Link to="/shop">
+              <button>BROWSE THE SHOP</button>
+            </Link>
+          </div>
         </section>
       )}
-
       {wishlistItems.length > 0 && (
         <main className="wishU">
           <section className="wishlist-container">

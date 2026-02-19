@@ -1,14 +1,13 @@
-import { useState } from 'react';
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import { toast } from 'react-toastify';
+import { toast } from "react-toastify";
 import "../media-queries/footer.css";
 import "./footer.css";
 
 export function Footer() {
-  
-  const [newsLetter, setNewsLetter] = useState('');
+  const [newsLetter, setNewsLetter] = useState("");
 
-  function getNewsLetter(event){
+  function getNewsLetter(event) {
     setNewsLetter(event.target.value);
   }
 
@@ -154,12 +153,12 @@ export function Footer() {
                   <option>Men</option>
                 </select>
                 <input
-                  onKeyDown={(event)=>{
-                    if(event.key === "Enter"){
+                  onKeyDown={(event) => {
+                    if (event.key === "Enter") {
                       toast.info(`${newsLetter} successfully signed up`, {
-                        position: 'top-center'
+                        position: "top-center",
                       });
-                      setNewsLetter('');
+                      setNewsLetter("");
                     }
                   }}
                   onChange={getNewsLetter}
@@ -168,13 +167,16 @@ export function Footer() {
                   placeholder="Enter your email address..."
                 />
                 <button
-                  onClick={()=>{
+                  onClick={() => {
                     toast.info(`${newsLetter} successfully signed up`, {
-                      position: 'top-center'
+                      position: "top-center",
                     });
-                    setNewsLetter('');
-                  }} 
-                  className="submit-btn">SUBMIT</button>
+                    setNewsLetter("");
+                  }}
+                  className="submit-btn"
+                >
+                  SUBMIT
+                </button>
               </div>
 
               <div className="menWomenContainer">
@@ -242,7 +244,9 @@ export function Footer() {
             <div className="brandOwnership">
               <h2>Zayra&trade;</h2>
               <p>
-                Developed with <span className="hearts">&hearts;</span> by <a href="https://linkedin.com/in/tobechiduru">Tobechi Duru</a> <span>&copy;{new Date().getFullYear()}</span>
+                Developed with <span className="hearts">&hearts;</span> by{" "}
+                <a href="https://linkedin.com/in/tobechiduru">Tobechi Duru</a>{" "}
+                <span>&copy;{new Date().getFullYear()}</span>
               </p>
             </div>
           </div>

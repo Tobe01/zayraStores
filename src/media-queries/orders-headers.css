@@ -5,15 +5,15 @@
     padding: 0 15px;
   }
 
-  .Checkoutleft img{
+  .Checkoutleft img {
     width: 150px;
   }
 
-    .checkoutRight {
+  .checkoutRight {
     gap: clamp(20px, 2vw, 20px);
   }
 
-  .checkoutRight h1{
+  .checkoutRight h1 {
     margin: 0;
     padding: 0;
   }
@@ -21,20 +21,20 @@
 
 /* Small–medium phones (iphone 14Promax) */
 @media (min-width: 420px) and (max-width: 500px) {
-    .checkoutSub {
+  .checkoutSub {
     width: 100%;
     padding: 0 15px;
   }
 
-  .Checkoutleft img{
+  .Checkoutleft img {
     width: 150px;
   }
 
-    .checkoutRight {
+  .checkoutRight {
     gap: clamp(20px, 2vw, 20px);
   }
 
-  .checkoutRight h1{
+  .checkoutRight h1 {
     margin: 0;
     padding: 0;
   }
@@ -42,20 +42,20 @@
 
 /* small laptop - tabs */
 @media(min-width: 501px) and (max-width: 1024px) {
-     .checkoutSub {
+  .checkoutSub {
     width: 100%;
     padding: 0 15px;
   }
 
-  .Checkoutleft img{
+  .Checkoutleft img {
     width: 250px;
   }
 
-    .checkoutRight {
+  .checkoutRight {
     gap: clamp(20px, 2vw, 20px);
   }
 
-  .checkoutRight h1{
+  .checkoutRight h1 {
     margin: 0;
     padding: 0;
   }

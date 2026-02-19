@@ -118,13 +118,13 @@
   }
 
   .imgContainer img {
-  height: 90%;
-  object-fit: cover;
-}
+    height: 90%;
+    object-fit: cover;
+  }
 
-.itemCost{
-  margin-top: -30px;
-}
+  .itemCost {
+    margin-top: -30px;
+  }
 
 }
 

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "../pages/wish-list.css";
-import '../media-queries/wish-list-header.css';
+import "../media-queries/wish-list-header.css";
 
 export function WishHeader() {
   return (
