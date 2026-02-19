@@ -545,7 +545,11 @@ export function Orders() {
           <div className="successMain">
             <div className="successImageCont">
               <img src={paymentSuccessfull} />
-              <div onClick={closePayment} className="closyy">
+              <div onClick={()=>{
+                closePayment();
+                handleContinueToShop();
+                }} 
+                className="closyy">
                <img src={closePay} alt="closeModal" width={30} />
               </div>
               <div className="confidi">
