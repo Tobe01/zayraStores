@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import { toast } from "react-toastify";
 import dayjs from "dayjs";
 import { Link } from "react-router-dom";
 import { OrdersHeader } from "../components/orders-header";
@@ -189,7 +190,7 @@ export function Orders() {
        || emailAddress === ''
        || payMethod === 'Select your prefered payment method'
       ){
-      alert("please fill up required fields to proceed");
+      toast.info("please fill up required fields to proceed");
     } else {
       setSpinner(true);
 
@@ -205,7 +206,7 @@ export function Orders() {
 
   function makePayment(){
     if(cardNumber === '' || expiryDate === '' || cvv === ''){
-      alert("please fill up required fields to proceed");
+      toast.info("please fill up required fields to proceed");
     } else {
       setConfirmSpinner(true);
 

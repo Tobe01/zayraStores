@@ -8,6 +8,10 @@
     padding: 20px;
   }
 
+  .checkoutContents {
+    width: 370px;
+  }
+
   .emptyCart {
     min-height: 60vh;
   }
@@ -49,6 +53,10 @@
 
   .orderSummary-Top {
     padding: 10px 45px 20px 45px;
+  }
+
+  .checkoutContents {
+    width: 370px;
   }
 
 }

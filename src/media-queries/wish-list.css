@@ -1,47 +1,67 @@
 /* iphone 11 and iphone 12 screens */
 @media(max-width: 414px) {
-  .wishlist-container {
-    margin: 20px 0 0 0;
-  }
 
   .wishU {
-  background-color: rgb(245, 239, 239); 
-  padding: 50px 0 0 0;
-  position: relative;
-  background-color: purple;
+  padding: 70px 0 0 0;
 }
 
-.wishCont{
-  border-radius: 5px;
-  width: 380px;
-  background-color: blue;
+  .wishCard {
+
+  width: fit-content;
 }
 
-.wishCard {
-  background-color: white;
-  background-color: yellow;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  border-radius: 5px;
-  padding: 10px;
+.wishlist-container {
+  padding: 20px 0 40px 5px;
 }
 
-.imageDesc {
-  display: flex;
-  gap: 10px;
-  background-color: green;
+  .imageDesc {
+  width: fit-content;
 }
+
+.imageContainer {
+  width: 80px;
+}
+
+.priceDesc {
+  min-width: 212px;
+  max-width: 223px;
+}
+
+.priceDesc h1{
+  font-size: 17px;
+}
+
 
 }
 
 /* Small–medium phones (iphone 14Promax) */
 @media (min-width: 420px) and (max-width: 500px) {
-  .wishlist-container {
-    margin: 20px 0 0 0;
-  }
+    .wishU {
+  padding: 70px 0 0 0;
+}
 
-  .wishU {
-    padding: 10px;
-  }
+  .wishCard {
+
+  width: fit-content;
+}
+
+.wishlist-container {
+  padding: 20px 0 40px 10px;
+}
+
+  .imageDesc {
+  width: fit-content;
+}
+
+.imageContainer {
+  width: 80px;
+}
+
+.priceDesc {
+  width: 250px;
+}
+
+.priceDesc h1{
+  font-size: 17px;
+}
 }

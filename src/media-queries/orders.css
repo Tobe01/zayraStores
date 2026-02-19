@@ -1,5 +1,22 @@
 /* iphone 11 and iphone 12 screens */
 @media(max-width: 414px) {
+  
+  .confirmPayment-modal{
+    width: 330px;
+  }
+
+  .confidi{
+  top: 300px;
+}
+
+.successMain{
+ padding: 0 20px 60px 20px;
+}
+
+.orderCredentials{
+ margin-top: 80px;
+}
+
   .checkoutMain {
     flex-direction: column;
     padding: 90px 10px;
@@ -7,8 +24,14 @@
   }
 
   .formSub {
-    width: 100%;
+    width: 385px;
     padding: 10px 0;
+    border-radius: 5px;
+  }
+
+  .contactDetails{
+    min-height: 630px;
+    border-radius: 5px;
   }
 
   .formSub h1 {
@@ -41,7 +64,7 @@
     padding: 0 25px 0 10px;
   }
 
-  .closeDrop {
+  .closeDrop { 
     width: 338px;
     padding: 0 25px 0 10px;
   }
@@ -95,15 +118,38 @@
 
 /* Small–medium phones (iphone 14Promax) */
 @media (min-width: 420px) and (max-width: 500px) {
+
+   .confirmPayment-modal{
+    width: 350px;
+  }
+
+    .confidi{
+  top: 300px;
+}
+
+.successMain{
+ padding: 0 20px 60px 20px;
+}
+
+.orderCredentials{
+ margin-top: 80px;
+}
+
   .checkoutMain {
     flex-direction: column;
     padding: 90px 10px;
     align-items: center;
   }
 
-  .formSub {
-    width: 100%;
+   .formSub {
+    width: 400px;
     padding: 10px 0;
+    border-radius: 5px;
+  }
+
+  .contactDetails{
+    min-height: 630px;
+    border-radius: 5px;
   }
 
   .formSub h1 {
@@ -196,11 +242,34 @@
     align-items: center;
   }
 
+    .confidi{
+  top: 450px;
+}
+
+.successMain{
+ padding: 0 20px 60px 20px;
+}
+
+.orderCredentials{
+ margin-top: 80px;
+}
+
   .paymentOrder {
     width: 65%;
   }
 
   .yourOrder {
     max-width: 100%;
+  }
+
+  .formSub {
+    width: 500px;
+    padding: 10px 30px;
+    border-radius: 5px;
+  }
+
+  .contactDetails{
+    min-height: 630px;
+    border-radius: 5px;
   }
 }

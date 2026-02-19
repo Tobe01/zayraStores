@@ -57,8 +57,9 @@
   }
 
   .viewSub {
-    max-width: 380px;
-    min-width: 380px;
+    max-width: 385px;
+    min-width: 350px;
+    border-radius: 10px;
     padding: 0;
     margin-top: 0;
   }
@@ -68,7 +69,7 @@
   }
 
   .imgContainer {
-    width: 98%;
+    width: 80%;
     height: 320px;
   }
 
@@ -113,13 +114,17 @@
   }
 
   .addItem {
-    margin-top: 5px;
+    margin-top: 20px;
   }
 
   .imgContainer img {
-    object-fit: contain;
-  }
+  height: 90%;
+  object-fit: cover;
+}
 
+.itemCost{
+  margin-top: -30px;
+}
 
 }
 
@@ -186,6 +191,7 @@
     min-width: 400px;
     padding: 5px 0;
     margin-top: 20px;
+    border-radius: 10px;
   }
 
   .viewCards {
@@ -238,11 +244,11 @@
   }
 
   .imgContainer img {
-    object-fit: contain;
+    object-fit: cover;
   }
 
   .addItem {
-    margin-top: 5px;
+    margin-top: 20px;
   }
 
 
@@ -300,5 +306,9 @@
 
   .viewSub {
     margin-top: 150px;
+  }
+
+  .imgContainer img {
+    object-fit: cover;
   }
 }
