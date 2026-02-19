@@ -1,32 +1,23 @@
-# Zayra Store — React E-commerce App
+# Zayra Store - React E-commerce App
 
 Zayra Store is a React-based e-commerce storefront that lets users browse products, view product details, manage a cart, and complete a simple checkout flow (UI). The project focuses on clean component structure, reusable UI, predictable state updates, and a responsive layout.
 
-## Live Demo
-- **Demo:** _Add link_
-- **Figma/Design (optional):** _Add link_
 
 ## Features
 - Product listing and product details pages
 - Add to cart, remove from cart, update item quantity
+- Add to wish list, remove from wish list
 - Cart summary (subtotal, item count)
 - Basic checkout page (UI flow)
 - Responsive layout for mobile and desktop
 - Reusable components and consistent styling
 
 ## Tech Stack
-- **Frontend:** React (Vite or CRA)
-- **Styling:** CSS / Tailwind / Styled Components _(edit to match your project)_
-- **State:** React hooks / Context API _(edit to match your project)_
+- **Frontend:** React, JavaScript ES6+
+- **Styling:** CSS / Tailwind / shadcn UI, Styled Components
+- **State:** React hooks / Context API
 - **Routing:** React Router
-- **Data:** Local JSON / API integration _(edit to match your project)_
-
-## Screenshots
-> Add 2–4 screenshots or a short GIF for best impact.
-
-| Home | Product | Cart |
-|------|---------|------|
-| _img_ | _img_ | _img_ |
+- **Data:** Local JSON / API integration 
 
 ## Getting Started
 
@@ -37,7 +28,7 @@ Zayra Store is a React-based e-commerce storefront that lets users browse produc
 ### Installation
 ```bash
 # clone repo
-git clone https://github.com/<your-username>/zayra-store.git
+git clone https://github.com/tobe01/zayra-store.git
 
 # enter folder
 cd zayra-store
@@ -50,7 +41,8 @@ npm run dev
 Build for Production
 npm run build
 npm run preview
-Project Structure (example)
+
+# Project Structure
 src/
   components/      # reusable UI components
   pages/           # route-level pages (Home, Product, Cart, Checkout)
