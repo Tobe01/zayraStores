@@ -13,6 +13,8 @@ export function HomePage() {
     window.scrollTo(0, 0);
   }, []);
 
+  // ivestigate image overlap
+
   return (
     <>
       <title>Zayra Store</title>
