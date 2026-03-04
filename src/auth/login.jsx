@@ -1,10 +1,47 @@
 import { Link } from "react-router-dom";
 import { AuthHeader } from "../components/auth-header";
-import { useEffect } from "react";
+import { useEffect, useState} from "react";
+import loader from '../../public/images/icons/svg-spinners--tadpole.svg';
 import "./login.css";
 import "../media-queries/login.css";
 
 export function Login() {
+  
+  const [ signup, setSignup ] = useState(false);
+  const [ image, setImage ] = useState(<img src={loader} alt="loader-spinner" loading="lazy" />);
+  const [ label, setLabel ] = useState('Loading...');
+  const [ email, setEmail ] = useState();
+  const [ password, setPassword ] = useState();
+
+  function getEmail(e){
+    setEmail(e.target.value);
+  }
+
+  function getPassword(e){
+    setPassword(e.target.value);
+  }
+
+  function showSignup(e){
+    e.preventDefault();
+    if(signup === false && (email != '' && password != '')){
+      setSignup(true);
+    } else if ( signup === false && (email === '' || password === '') ) {
+      setSignup(false);
+      alert("please fill up all input fields");
+    }
+
+    setTimeout(()=>{
+      setLabel('Invalid email or password');
+      setImage('');
+    }, 3000);
+
+    setTimeout(()=>{
+      setSignup(false);
+    }, 4000);
+
+  }
+
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -14,9 +51,20 @@ export function Login() {
       <title>Login</title>
       <AuthHeader />
 
+      {signup && (
+        <div className="signing-up-modal">
+          <div>
+            <button>
+              {image}
+              {label}
+            </button>
+          </div>
+        </div>
+      )}
+      
       <main className="main">
         <section className="login-container">
-          <form className="login-form">
+          <form onSubmit={showSignup} className="login-form">
             <div className="flex-column">
               <label>Email</label>
             </div>
@@ -34,6 +82,7 @@ export function Login() {
               </svg>
 
               <input
+                onChange={getEmail}
                 type="text"
                 className="input"
                 placeholder="Enter your Email"
@@ -56,6 +105,7 @@ export function Login() {
               </svg>
 
               <input
+                onChange={getPassword}
                 type="password"
                 className="input"
                 placeholder="Enter your Password"
@@ -80,7 +130,7 @@ export function Login() {
               </Link>
             </div>
 
-            <button className="button-submit">Sign In</button>
+            <button type="submit" className="button-submit">Sign In</button>
 
             <Link to="/Signup">
               <p className="p">

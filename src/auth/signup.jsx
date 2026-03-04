@@ -1,10 +1,52 @@
 import { Link } from "react-router-dom";
 import { AuthHeader } from "../components/auth-header";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import loader from '../../public/images/icons/svg-spinners--tadpole.svg';
 import "./login.css";
 import "../media-queries/signup.css";
 
 export function Signup() {
+  
+  const [ signup, setSignup ] = useState(false);
+  const [ label, setLabel ] = useState('Signing you up...');
+  const [ image, setImage ] = useState(<img src={loader} alt="loader-spinner" loading="lazy" />);
+  const [ name, setName ] = useState('');
+  const [ email, setEmail ] = useState();
+  const [ password, setPassword ] = useState();
+
+  
+  function getName(e){
+    setName(e.target.value);
+  }
+
+  function getEmail(e){
+    setEmail(e.target.value);
+  }
+
+  function getPassword(e){
+    setPassword(e.target.value);
+  }
+
+  function showSignup(e){
+    e.preventDefault();
+    if(signup === false && (name != '' && email != '' && password != '')){
+      setSignup(true);
+    } else if ( signup === false && (name === '' || email === '' || password === '') ) {
+      setSignup(false);
+      alert("please fill up all input fields");
+    }
+
+    setTimeout(()=>{
+      setLabel('Connection error!...');
+      setImage('');
+    }, 3000);
+
+    setTimeout(()=>{
+      setSignup(false);
+    }, 4000);
+
+  }
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -14,9 +56,20 @@ export function Signup() {
       <title>Signup</title>
       <AuthHeader />
 
+      {signup && (
+        <div className="signing-up-modal">
+          <div>
+            <button>
+              {image}
+              {label}
+            </button>
+          </div>
+        </div>
+      )}
+
       <main className="main">
         <section className="login-container">
-          <form className="signup">
+          <form className="signup" onSubmit={showSignup}>
             <div className="flex-column">
               <label>Name</label>
             </div>
@@ -32,6 +85,7 @@ export function Signup() {
                 <path d="m304 224c-8.832031 0-16-7.167969-16-16v-80c0-52.929688-43.070312-96-96-96s-96 43.070312-96 96v80c0 8.832031-7.167969 16-16 16s-16-7.167969-16-16v-80c0-70.59375 57.40625-128 128-128s128 57.40625 128 128v80c0 8.832031-7.167969 16-16 16z" />
               </svg>
               <input
+                onChange={getName}
                 type="text"
                 className="input"
                 placeholder="Enter your Full Name"
@@ -54,6 +108,7 @@ export function Signup() {
                 </g>
               </svg>
               <input
+                onChange={getEmail}
                 type="text"
                 className="input"
                 placeholder="Enter your Email"
@@ -75,13 +130,14 @@ export function Signup() {
                 <path d="m304 224c-8.832031 0-16-7.167969-16-16v-80c0-52.929688-43.070312-96-96-96s-96 43.070312-96 96v80c0 8.832031-7.167969 16-16 16s-16-7.167969-16-16v-80c0-70.59375 57.40625-128 128-128s128 57.40625 128 128v80c0 8.832031-7.167969 16-16 16z" />
               </svg>
               <input
+                onChange={getPassword}
                 type="password"
                 className="input"
                 placeholder="Enter your Password"
               />
             </div>
 
-            <button className="button-submit">Sign Up</button>
+            <button type="submit" className="button-submit">Sign Up</button>
 
             <p className="p">
               Have an account?{" "}
@@ -93,7 +149,7 @@ export function Signup() {
             <p className="p line">Or With</p>
 
             <div className="flex-row">
-              <button className="btn google">
+              <button type="button" className="btn google">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
@@ -119,7 +175,7 @@ export function Signup() {
                 Google
               </button>
 
-              <button className="btn apple">
+              <button type="button" className="btn apple">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
