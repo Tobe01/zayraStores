@@ -37,7 +37,7 @@ export function Signup() {
     }
 
     setTimeout(()=>{
-      setLabel('Connection error!...');
+      setLabel('Connection error. Please try again later.');
       setImage('');
     }, 3000);
 
