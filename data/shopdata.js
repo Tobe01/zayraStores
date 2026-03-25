@@ -4,11 +4,11 @@ export const shopData = [{
   images: {
     image1: '2149684322.webp',
     image2: '2149684359.webp',
-    image3: '2149684357.webp',  
+    image3: '2149684357.webp',
   },
   itemName: 'Aaron Martinez',
   itemDescription: 'Slim Stacked Flare Embroidered Strip Tricot Track Pants',
-  priceCents: 2230,
+  priceCents: 125000,
   colorPicker: {
     btn1: 'brownish.webp',
     btn2: 'violet.webp',
@@ -31,7 +31,7 @@ export const shopData = [{
   },
   itemName: 'Hazel Lane',
   itemDescription: 'Textured Sleeveless Summer Jumpsuit',
-  priceCents: 2650,
+  priceCents: 299900,
   colorPicker: {
     btn1: 'Plain Background with Thick Red Border Poetic Quotes (19).webp',
     btn2: 'Plain Background with Thick Red Border Poetic Quotes (16).webp',
@@ -53,7 +53,7 @@ export const shopData = [{
   },
   itemName: 'Luna Crest',
   itemDescription: 'Slim High-Rise Stretch Fit Denim Pants',
-  priceCents: 1890,
+  priceCents: 450000,
   colorPicker: {
     btn1: 'army-green.webp',
     btn2: 'army-dark.webp',
@@ -66,7 +66,7 @@ export const shopData = [{
   },
   itemCategory: "women's clothing",
   productDesc: 'Soft denim with breathable stretch for daily casual comfort.'
-},  {
+}, {
   id: crypto.randomUUID(),
   images: {
     image1: '31633.webp',
@@ -75,7 +75,7 @@ export const shopData = [{
   },
   itemName: 'Mason Ridge',
   itemDescription: 'Classic Cotton Fit Essential Crewneck Tee',
-  priceCents: 1250,
+  priceCents: 159900,
   colorPicker: {
     btn1: 'Plain Background with Thick Red Border Poetic Quotes (2).webp',
     btn2: 'Plain Background with Thick Red Border Poetic Quotes (3).webp',
@@ -88,7 +88,7 @@ export const shopData = [{
   },
   itemCategory: "women's clothing",
   productDesc: 'Light cotton fabric designed for easy wear and regular movement.'
-},  {
+}, {
   id: crypto.randomUUID(),
   images: {
     image1: '2149085823.webp',
@@ -97,7 +97,7 @@ export const shopData = [{
   },
   itemName: 'Amber Vale',
   itemDescription: 'Soft Knit Ribbed Long Sleeve Crop Top',
-  priceCents: 1670,
+  priceCents: 320000,
   colorPicker: {
     btn1: 'plain.webp',
     btn2: 'Plain Background with Thick Red Border Poetic Quotes (21).webp',
@@ -110,7 +110,7 @@ export const shopData = [{
   },
   itemCategory: "kid's clothing",
   productDesc: 'Warm knit texture made for comfort and fitted modern style.'
-},  {
+}, {
   id: crypto.randomUUID(),
   images: {
     image1: 'daniyal-ahmed-A2ilNniJdug-unsplash.webp',
@@ -119,7 +119,7 @@ export const shopData = [{
   },
   itemName: 'Jaxon Steel',
   itemDescription: 'Relaxed Fit Nylon Windbreaker Jacket',
-  priceCents: 2890,
+  priceCents: 275000,
   colorPicker: {
     btn1: 'Plain Background with Thick Red Border Poetic Quotes (21).webp',
     btn2: 'Plain Background with Thick Red Border Poetic Quotes (8).webp',
@@ -132,7 +132,7 @@ export const shopData = [{
   },
   itemCategory: "women's clothing",
   productDesc: 'Lightweight shell for easy layering and all-day coverage.'
-},  {
+}, {
   id: crypto.randomUUID(),
   images: {
     image1: '2148123930.webp',
@@ -141,7 +141,7 @@ export const shopData = [{
   },
   itemName: 'Sienna Wave',
   itemDescription: 'Printed Pleated High Waist Maxi Skirt',
-  priceCents: 2040,
+  priceCents: 389900,
   colorPicker: {
     btn1: 'Plain Background with Thick Red Border Poetic Quotes (6).webp',
     btn2: 'Plain Background with Thick Red Border Poetic Quotes (5).webp',
@@ -154,7 +154,7 @@ export const shopData = [{
   },
   itemCategory: "men's clothing",
   productDesc: 'Soft flowy fabric designed for casual summer and evening wear.'
-},  {
+}, {
   id: crypto.randomUUID(),
   images: {
     image1: '2148448892.webp',
@@ -163,7 +163,7 @@ export const shopData = [{
   },
   itemName: 'Orion Crew',
   itemDescription: 'Athletic Dry-Fit Training Shorts',
-  priceCents: 1390,
+  priceCents: 499900,
   colorPicker: {
     btn1: 'cutgreen.webp',
     btn2: 'Plain Background with Thick Red Border Poetic Quotes (10).webp',
@@ -176,7 +176,7 @@ export const shopData = [{
   },
   itemCategory: "men's clothing",
   productDesc: 'Quick-dry material offering breathable comfort for workouts.'
-},  {
+}, {
   id: crypto.randomUUID(),
   images: {
     image1: '2149137839.webp',
@@ -185,7 +185,7 @@ export const shopData = [{
   },
   itemName: 'Vera Bloom',
   itemDescription: 'Floral Ruffled Short Sleeve Blouse',
-  priceCents: 1580,
+  priceCents: 650000,
   colorPicker: {
     btn1: 'brownie.webp',
     btn2: 'Plain Background with Thick Red Border Poetic Quotes (6).webp',
@@ -198,7 +198,7 @@ export const shopData = [{
   },
   itemCategory: "men's clothing",
   productDesc: 'Light airy fabric ideal for warm weather and casual styling.'
-},  {
+}, {
   id: crypto.randomUUID(),
   images: {
     image1: 'giorgio-trovato-_0n2OqRTzKA-unsplash.webp',
@@ -207,7 +207,7 @@ export const shopData = [{
   },
   itemName: 'Cole Anders',
   itemDescription: 'Regular Fit Stretch Chino Pants',
-  priceCents: 2100,
+  priceCents: 199900,
   colorPicker: {
     btn1: 'Plain Background with Thick Red Border Poetic Quotes (14).webp',
     btn2: 'Plain Background with Thick Red Border Poetic Quotes (15).webp',
@@ -220,7 +220,7 @@ export const shopData = [{
   },
   itemCategory: "men's clothing",
   productDesc: 'Soft cotton-blend with added stretch for daily movement.'
-},  {
+}, {
   id: crypto.randomUUID(),
   images: {
     image1: 'precious-madubuike-YfZ7vA6-Uik-unsplash.webp',
@@ -229,7 +229,7 @@ export const shopData = [{
   },
   itemName: 'Maple Dawn',
   itemDescription: 'Cozy Thick Knit Oversized Sweater',
-  priceCents: 2490,
+  priceCents: 720000,
   colorPicker: {
     btn1: 'plain.webp',
     btn2: 'Plain Background with Thick Red Border Poetic Quotes (3).webp',
@@ -242,7 +242,7 @@ export const shopData = [{
   },
   itemCategory: "women's clothing",
   productDesc: 'Warm thick knit designed for relaxed fit and cool weather use.'
-},  {
+}, {
   id: crypto.randomUUID(),
   images: {
     image1: 'md-ishak-raman-8GjW6tAHgRM-unsplash.webp',
@@ -251,7 +251,7 @@ export const shopData = [{
   },
   itemName: 'Troy Flint',
   itemDescription: 'Casual Hooded Cotton Zip Jacket',
-  priceCents: 2300,
+  priceCents: 810000,
   colorPicker: {
     btn1: 'plain.webp',
     btn2: 'violet.webp',
@@ -264,7 +264,7 @@ export const shopData = [{
   },
   itemCategory: "women's clothing",
   productDesc: 'Soft lining built for light warmth and everyday wear.'
-},  {
+}, {
   id: crypto.randomUUID(),
   images: {
     image1: 'philip-blystone-yUx3RlXxe_M-unsplash.webp',
@@ -273,7 +273,7 @@ export const shopData = [{
   },
   itemName: 'Elara Mist',
   itemDescription: 'V-Neck Satin Evening Slip Dress',
-  priceCents: 3190,
+  priceCents: 134500,
   colorPicker: {
     btn1: 'Plain Background with Thick Red Border Poetic Quotes (16).webp',
     btn2: 'plain.webp',
@@ -286,7 +286,7 @@ export const shopData = [{
   },
   itemCategory: "men's clothing",
   productDesc: 'Smooth satin texture shaped for elegant night outings.'
-},  {
+}, {
   id: crypto.randomUUID(),
   images: {
     image1: 'ryan-plomp-76w_eDO1u1E-unsplash.webp',
@@ -295,7 +295,7 @@ export const shopData = [{
   },
   itemName: 'Nolan Peak',
   itemDescription: 'Soft Fleece Lined Jogger Pants',
-  priceCents: 1750,
+  priceCents: 276000,
   colorPicker: {
     btn1: 'Plain Background with Thick Red Border Poetic Quotes (6).webp',
     btn2: 'Red.webp',
@@ -308,7 +308,7 @@ export const shopData = [{
   },
   itemCategory: "men's clothing",
   productDesc: 'Warm fleece build for relaxed everyday comfort.'
-},  {
+}, {
   id: crypto.randomUUID(),
   images: {
     image1: '2149153334.webp',
@@ -317,7 +317,7 @@ export const shopData = [{
   },
   itemName: 'Syntia Delaney',
   itemDescription: 'Unisex Performance Tracksuit Set in Army color',
-  priceCents: 2560,
+  priceCents: 399900,
   colorPicker: {
     btn1: 'army-green.webp',
     btn2: 'cutgreen.webp',
@@ -339,7 +339,7 @@ export const shopData = [{
   },
   itemName: 'Ryder Knox',
   itemDescription: 'Basic Crewneck Sweatshirt Cotton Blend',
-  priceCents: 1850,
+  priceCents: 558000,
   colorPicker: {
     btn1: 'Plain Background with Thick Red Border Poetic Quotes (11).webp',
     btn2: 'Plain Background with Thick Red Border Poetic Quotes (6).webp',
@@ -352,7 +352,7 @@ export const shopData = [{
   },
   itemCategory: "women's clothing",
   productDesc: 'Soft fleece blend for daily layering and comfort.'
-},  {
+}, {
   id: crypto.randomUUID(),
   images: {
     image1: '13769.webp',
@@ -361,8 +361,8 @@ export const shopData = [{
   },
   itemName: 'Lily Shore',
   itemDescription: 'Unisex Performance Tracksuit Set in Army color',
-  priceCents: 2450,
-  colorPicker: { 
+  priceCents: 623000,
+  colorPicker: {
     btn1: 'plain.webp',
     btn2: 'Plain Background with Thick Red Border Poetic Quotes (16).webp',
     btn3: 'Plain Background with Thick Red Border Poetic Quotes (14).webp',
@@ -374,7 +374,7 @@ export const shopData = [{
   },
   itemCategory: "kid's clothing",
   productDesc: 'Soft stretch knit shaping a fitted feminine silhouette.'
-},  {
+}, {
   id: crypto.randomUUID(),
   images: {
     image1: 'julian-lates-_cWae6ObQNs-unsplash.webp',
@@ -383,7 +383,7 @@ export const shopData = [{
   },
   itemName: 'Dex Vaughn',
   itemDescription: 'Loose Fit Heavyweight Cargo Shorts',
-  priceCents: 1690,
+  priceCents: 487500,
   colorPicker: {
     btn1: 'cutgreen.webp',
     btn2: 'Plain Background with Thick Red Border Poetic Quotes (11).webp',
@@ -396,7 +396,7 @@ export const shopData = [{
   },
   itemCategory: "men's clothing",
   productDesc: 'Durable cotton cargo made for comfort and utility.'
-},  {
+}, {
   id: crypto.randomUUID(),
   images: {
     image1: 'danilo-capece-NoVnXXmDNi0-unsplash.webp',
@@ -405,7 +405,7 @@ export const shopData = [{
   },
   itemName: 'Rosa Ivy',
   itemDescription: 'Printed Boho Lace Trim Blouse',
-  priceCents: 1620,
+  priceCents: 350000,
   colorPicker: {
     btn1: 'Plain Violet Background with Thin Gold Border Poetic Quotes.webp',
     btn2: 'darkish-red.webp',
@@ -418,7 +418,7 @@ export const shopData = [{
   },
   itemCategory: "men's clothing",
   productDesc: 'Soft airy fabric styled with light lace accents.'
-},  {
+}, {
   id: crypto.randomUUID(),
   images: {
     image1: 'alsu-vershinina-OXWB4NSLjHo-unsplash.webp',
@@ -427,7 +427,7 @@ export const shopData = [{
   },
   itemName: 'Gavin Brooks',
   itemDescription: 'Slim Fit Button Down Oxford Shirt',
-  priceCents: 2200,
+  priceCents: 298000,
   colorPicker: {
     btn1: 'Plain Background with Thick Red Border Poetic Quotes (6).webp',
     btn2: 'Plain Background with Thick Red Border Poetic Quotes (15).webp',
@@ -445,11 +445,11 @@ export const shopData = [{
   images: {
     image1: '2148070384.webp',
     image2: '2148070389.webp',
-    image3: '2148070390.webp',  
+    image3: '2148070390.webp',
   },
   itemName: 'Mira Blossom',
   itemDescription: 'Casual Sleeveless Ruffle Hem Dress',
-  priceCents: 1890,
+  priceCents: 415000,
   colorPicker: {
     btn1: 'Plain Background with Thick Red Border Poetic Quotes (6).webp',
     btn2: 'maroon.webp',
@@ -471,7 +471,7 @@ export const shopData = [{
   },
   itemName: 'Zane Archer',
   itemDescription: 'Zippered Track Hoodie Soft Stretch Blend',
-  priceCents: 2550,
+  priceCents: 530000,
   colorPicker: {
     btn1: 'Plain Background with Thick Red Border Poetic Quotes (6).webp',
     btn2: 'pinkish.webp',
@@ -484,7 +484,7 @@ export const shopData = [{
   },
   itemCategory: "kid's clothing",
   productDesc: 'Soft stretch blend for comfort during light activity.'
-},  {
+}, {
   id: crypto.randomUUID(),
   images: {
     image1: 'tuananh-blue-2QSK4kFoVZE-unsplash.webp',
@@ -493,7 +493,7 @@ export const shopData = [{
   },
   itemName: 'Nova Pine',
   itemDescription: 'Cotton High-Waist Relaxed Shorts',
-  priceCents: 1450,
+  priceCents: 699900,
   colorPicker: {
     btn1: 'Plain Background with Thick Red Border Poetic Quotes (3).webp',
     btn2: 'Plain Background with Thick Red Border Poetic Quotes (24).webp',
@@ -506,7 +506,7 @@ export const shopData = [{
   },
   itemCategory: "men's clothing",
   productDesc: 'Light feel designed for warm days and simple styling.'
-},  {
+}, {
   id: crypto.randomUUID(),
   images: {
     image1: 'modupe-falade-BayzMQkraW4-unsplash.webp',
@@ -515,7 +515,7 @@ export const shopData = [{
   },
   itemName: 'Elias Stone',
   itemDescription: 'Soft Knit Everyday Zip Pullover',
-  priceCents: 2350,
+  priceCents: 125500,
   colorPicker: {
     btn1: 'Plain Background with Thick Red Border Poetic Quotes (26).webp',
     btn2: 'Plain Background with Thick Red Border Poetic Quotes (1).webp',
@@ -528,7 +528,7 @@ export const shopData = [{
   },
   itemCategory: "kid's clothing",
   productDesc: 'Light knit build created for regular layering comfort.'
-},  {
+}, {
   id: crypto.randomUUID(),
   images: {
     image1: '2149067157.webp',
@@ -537,7 +537,7 @@ export const shopData = [{
   },
   itemName: 'Ayla Fern',
   itemDescription: 'Unisex Performance Tracksuit Set in Army color',
-  priceCents: 2560,
+  priceCents: 264000,
   colorPicker: {
     btn1: 'Plain Background with Thick Red Border Poetic Quotes (14).webp',
     btn2: 'pinkish.webp',
@@ -550,7 +550,7 @@ export const shopData = [{
   },
   itemCategory: "kid's clothing",
   productDesc: 'Soft ribbed fabric made for fitted warm-weather wear.'
-},  {
+}, {
   id: crypto.randomUUID(),
   images: {
     image1: '2149067092.webp',
@@ -559,7 +559,7 @@ export const shopData = [{
   },
   itemName: 'Leo Marsh',
   itemDescription: 'Classic Fit Long Sleeve Henley Tee',
-  priceCents: 1600,
+  priceCents: 387000,
   colorPicker: {
     btn1: 'Plain Background with Thick Red Border Poetic Quotes (14).webp',
     btn2: 'Plain Background with Thick Red Border Poetic Quotes (15).webp',
@@ -572,7 +572,7 @@ export const shopData = [{
   },
   itemCategory: "kid's clothing",
   productDesc: 'Cotton-blend built for daily comfort and breathable fit.'
-},  {
+}, {
   id: crypto.randomUUID(),
   images: {
     image1: '2149067066.webp',
@@ -581,7 +581,7 @@ export const shopData = [{
   },
   itemName: 'Skye Monroe',
   itemDescription: 'Loose Fit Buttoned Linen Shirt',
-  priceCents: 2100,
+  priceCents: 499500,
   colorPicker: {
     btn1: 'plain.webp',
     btn2: 'Plain Background with Thick Red Border Poetic Quotes (4).webp',
@@ -594,7 +594,7 @@ export const shopData = [{
   },
   itemCategory: "kid's clothing",
   productDesc: 'Soft linen design ideal for warm climates and casual looks.'
-},  {
+}, {
   id: crypto.randomUUID(),
   images: {
     image1: 'oscar-ramirez-SAfrvrXLuY8-unsplash.webp',
@@ -603,7 +603,7 @@ export const shopData = [{
   },
   itemName: 'Hank Wilder',
   itemDescription: 'Light Performance Mesh Tee',
-  priceCents: 1300,
+  priceCents: 612000,
   colorPicker: {
     btn1: 'Plain Background with Thick Red Border Poetic Quotes (26).webp',
     btn2: 'violet.webp',
@@ -616,7 +616,7 @@ export const shopData = [{
   },
   itemCategory: "women's clothing",
   productDesc: 'Breathable mesh fabric ideal for training and movement.'
-},  {
+}, {
   id: crypto.randomUUID(),
   images: {
     image1: 'nathan-dumlao-AqWligQpYHM-unsplash.webp',
@@ -625,7 +625,7 @@ export const shopData = [{
   },
   itemName: 'Ruby Silk',
   itemDescription: 'Flare Hem Satin Midi Skirt',
-  priceCents: 2400,
+  priceCents: 734000,
   colorPicker: {
     btn1: 'Plain Background with Thick Red Border Poetic Quotes (4).webp',
     btn2: 'Plain Background with Thick Red Border Poetic Quotes (6).webp',
@@ -638,7 +638,7 @@ export const shopData = [{
   },
   itemCategory: "men's clothing",
   productDesc: 'Smooth satin for easy flow and elegant everyday wear.'
-},  {
+}, {
   id: crypto.randomUUID(),
   images: {
     image1: 'gab-mv-DaeFHBfw-unsplash.webp',
@@ -647,7 +647,7 @@ export const shopData = [{
   },
   itemName: 'Chase Timber',
   itemDescription: 'Soft Cotton Classic Polo Shirt',
-  priceCents: 1750,
+  priceCents: 859900,
   colorPicker: {
     btn1: 'Plain Background with Thick Red Border Poetic Quotes (25).webp',
     btn2: 'Plain Background with Thick Red Border Poetic Quotes (26).webp',
@@ -660,4 +660,4 @@ export const shopData = [{
   },
   itemCategory: "men's clothing",
   productDesc: 'Light cotton blend crafted for smart casual outfits.'
-}, ];
+},];

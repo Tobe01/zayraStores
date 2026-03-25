@@ -158,7 +158,7 @@ export function KidsCard({
             <h1>{itemName}</h1>
             <h3>{itemDescription}</h3>
           </div>
-          <p>{`$${(priceCents / 100).toFixed(2)}`}</p>
+          <p>{`₦${(priceCents / 100).toLocaleString("en-NG", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`}</p>
           <div className="colors-container">
             <button onClick={showBtn1} className="btn1">
               <img src={`images/colors/${btn1}`} alt="colorPicker" />

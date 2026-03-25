@@ -320,7 +320,7 @@ export function Orders() {
 
               <div className="detailsAmount">
                 <div>Total amount</div>
-                <div>{`$${(orderTotalCents / 100).toFixed(2)}`}</div>
+                <div>{`₦${(orderTotalCents / 100).toLocaleString("en-NG", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`}</div>
               </div>
             </div>
 
@@ -826,7 +826,7 @@ export function Orders() {
                       </div>
                       <div className="checkoutItems">
                         <b>{cartItem.itemDescription}</b>
-                        <p>{`$${(cartItem.priceCents / 100).toFixed(2)}`}</p>
+                        <p>{`₦${(cartItem.priceCents / 100).toLocaleString("en-NG", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`}</p>
                       </div>
                     </div>
                   );
@@ -839,25 +839,25 @@ export function Orders() {
                   <div className="orderfirst">
                     <div className="subtotaal">
                       <p>Subtotal</p>
-                      <p>{`$${(subtotalCents / 100).toFixed(2)}`}</p>
+                      <p>{`₦${(subtotalCents / 100).toLocaleString("en-NG", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`}</p>
                     </div>
                     <div className="discoount">
                       <p>Discount</p>
-                      <p>{`-$${(discountCents / 100).toFixed(2)}`}</p>
+                      <p>{`-₦${(discountCents / 100).toLocaleString("en-NG", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`}</p>
                     </div>
                   </div>
 
                   <div className="orderSecoond">
                     <div className="orderTootal">
                       <p>Order total</p>
-                      <p>{`$${(orderTotalCents / 100).toFixed(2)}`}</p>
+                      <p>{`₦${(orderTotalCents / 100).toLocaleString("en-NG", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`}</p>
                     </div>
 
                     <div className="orderDiscount">
                       <h4>Discounts included:</h4>
                       <p>
                         70% SALE{" "}
-                        <span>{`-$${(discountCents / 100).toFixed(2)}`}</span>
+                        <span>{`-₦${(discountCents / 100).toLocaleString("en-NG", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`}</span>
                       </p>
                     </div>
                   </div>

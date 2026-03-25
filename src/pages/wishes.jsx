@@ -19,7 +19,7 @@ export function Wishes({ wishItem, onDeleteWish, onAddWishToCart }) {
           <div className="descriptionContainer">
             <div className="priceDesc">
               <h1>{wishItem.itemDescription}</h1>
-              <p>{`$${(Number(wishItem.priceCents || 0) / 100).toFixed(2)}`}</p>
+              <p>{`₦${(Number(wishItem.priceCents || 0) / 100).toLocaleString("en-NG", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`}</p>
             </div>
             <button
               type="button"

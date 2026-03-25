@@ -213,7 +213,7 @@ export function ViewCard({
 
                 <div className="itemPrice">
                   <p>Price:</p>
-                  <h1>{`$${(priceCents / 100).toFixed(2)}`}</h1>
+                  <h1>{`₦${(priceCents / 100).toLocaleString("en-NG", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`}</h1>
                 </div>
               </div>
             </div>
